@@ -3,6 +3,8 @@ import time
 import threading
 from datetime import datetime, timedelta
 
+import requests
+
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
@@ -11,7 +13,7 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 from ui.parser import Ui_MainWindow
-from PyQt6.QtWidgets import QMainWindow, QApplication
+from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
 class MainWindow(QMainWindow):
@@ -22,6 +24,10 @@ class MainWindow(QMainWindow):
 
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        self.profiles = DolphinAPI().get_profiles()
+
+        self.ui.profile.addItems(list(self.profiles.keys()))
 
         self.ui.first_date.setDate(datetime.now())
         self.ui.second_date.setDate(datetime.now())
@@ -35,7 +41,7 @@ class MainWindow(QMainWindow):
 
         data = {
             "subreddits": self.ui.subreddits.toPlainText().split('\n'),
-            "proxy_type": 1
+            "profile_id": self.profiles[self.ui.profile.currentText()]
         }
 
         if self.ui.use_date.isChecked():
@@ -57,10 +63,6 @@ class Worker:
         self.all_posts = []
         self.authors = []
 
-        credentials = kwargs["credentials"].split(':')
-        self.username = credentials[0]
-        self.password = credentials[1]
-
         if "second_date" in kwargs:
             date_format = "%d.%m.%Y"
 
@@ -78,24 +80,23 @@ class Worker:
 
         Logging().info(str(self.dates))
 
-        self.start_browser()
+        self.start_browser(kwargs["profile_id"])
 
         for subreddit in kwargs["subreddits"]:
             link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
 
             self.get_posts(link=link)
 
-        self.login()
-
         for post in self.all_posts:
             self.get_comments(link=post)
 
         time.sleep(666)
 
-    def start_browser(self):
+    def start_browser(self, profile_id: str):
         options = webdriver.ChromeOptions()
         options.add_argument('--disable-popup-blocking')
         options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DolphinAPI().start_profile(profile_id)}')
 
         self.driver = webdriver.Chrome(service=Service('chromedriver.exe'), options=options)
         self.actions = ActionChains(self.driver)
@@ -103,33 +104,6 @@ class Worker:
         self.driver.maximize_window()
 
         Logging().debug('Browser started')
-
-    def login(self):
-        self.driver.get('https://reddit.com/login')
-
-        Logging().debug('Redirected to login page')
-
-        wait = WebDriverWait(self.driver, 60)
-
-        wait.until(
-            EC.element_to_be_clickable((By.ID, 'loginUsername'))
-        ).send_keys(self.username)
-
-        Logging().debug('Username entered')
-
-        wait.until(
-            EC.element_to_be_clickable((By.ID, 'loginPassword'))
-        ).send_keys(self.password)
-
-        Logging().debug('Password entered')
-
-        wait.until(
-            EC.element_to_be_clickable((By.TAG_NAME, 'button'))
-        ).click()
-
-        Logging().debug('Submit button pressed')
-
-        time.sleep(3)
 
     def get_posts(self, link: str):
         date_format = "%Y-%m-%d"
@@ -240,11 +214,59 @@ class Logging:
 
 class DolphinAPI:
     def __init__(self):
-        with open('token.txt') as f:
+        with open('data/token.txt') as f:
             self.token = f.readline()
 
+    def start_profile(self, profile_id: str):
+        with open('data/token.txt') as f:
+            token = f.readline()
+
+        headers = {
+            "Authorization": f"Bearer {token}"
+        }
+
+        resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/start?automation=1",
+                            headers=headers)
+
+        if b"initConnectionError" in resp.content:
+            return 0
+        elif b"automation" not in resp.content:
+            self.stop_profile(profile_id)
+
+            time.sleep(5)
+
+            port = self.start_profile(profile_id)
+        else:
+            port = resp.json()["automation"]["port"]
+
+        return port
+
+    def stop_profile(self, profile_id: str):
+        with open('token.txt') as f:
+            token = f.readline()
+
+        headers = {
+            "Authorization": f"Bearer {token}"
+        }
+
+        resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/stop", headers=headers)
+
+        if b"error" in resp.content:
+            time.sleep(5)
+
+            self.stop_profile(profile_id)
+
     def get_profiles(self) -> dict:
-        ...
+        with open('data/token.txt') as f:
+            token = f.readline()
+
+        headers = {
+            "Authorization": f"Bearer {token}"
+        }
+
+        profiles = requests.get('https://anty-api.com/browser_profiles', headers=headers).json()["data"]
+
+        return {profile["name"]: str(profile["id"]) for profile in profiles}
 
 
 if __name__ == "__main__":
@@ -254,4 +276,4 @@ if __name__ == "__main__":
     app = QApplication([])
     win = MainWindow()
     win.show()
-    app.exec()
+    app.exec_()
