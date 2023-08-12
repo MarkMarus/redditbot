@@ -54,7 +54,7 @@ class Worker:
         Logging().debug('Worker started')
 
         self.dates = []
-        self.all_posts = ['https://www.reddit.com/r/europe/comments/15oh5f9/subnational_gdp_per_capita_uk_germany_netherlands/']
+        self.all_posts = []
         self.authors = []
 
         credentials = kwargs["credentials"].split(':')
@@ -80,10 +80,10 @@ class Worker:
 
         self.start_browser()
 
-        # for subreddit in kwargs["subreddits"]:
-        #     link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
-        #
-        #     self.get_posts(link=link)
+        for subreddit in kwargs["subreddits"]:
+            link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
+
+            self.get_posts(link=link)
 
         self.login()
 
@@ -96,9 +96,6 @@ class Worker:
         options = webdriver.ChromeOptions()
         options.add_argument('--disable-popup-blocking')
         options.add_argument('--disable-blink-features=AutomationControlled')
-
-        with open('data/proxies.txt') as f:
-            proxies = [line.strip() for line in f.readlines() if line.strip()]
 
         self.driver = webdriver.Chrome(service=Service('chromedriver.exe'), options=options)
         self.actions = ActionChains(self.driver)
