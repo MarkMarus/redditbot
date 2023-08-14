@@ -213,34 +213,35 @@ class Worker:
                 Logging().info('Button +')
 
                 for button in more_comments_button:
-                    self.actions.click(button).perform()
+                    try:
+                        self.actions.click(button).perform()
+                    except:
+                        continue
+
                     time.sleep(0.2)
             else:
                 Logging().info('Button -')
 
                 has_more = False
 
-        comments = self.driver.execute_script("""
-            return document.querySelectorAll("[class*='Post']");
+        authors = self.driver.execute_script("""
+            let authors = [];
+            let comments = document.querySelectorAll("[class*='Comment']");
+            
+            for (let comment of comments) {
+                author_element = comment.querySelector('[data-testid="comment_author_link"]');
+                if (author_element) {
+                    author = author_element.textContent;
+                    if (author !== "AutoModerator") {
+                        authors.push(author);
+                    }
+                }
+            }
+            
+            return authors;
         """)
 
-        if comments:
-            Logging().info('Comment +')
-
-            for comment in comments:
-
-                try:
-                    author = re.findall(r'/user/(.+)/',
-                                        comment.find_element(By.XPATH, './/a[@data-testid]').get_attribute('href'))[0]
-                except:
-                    continue
-
-                Logging().info(f'Comment author - {author}')
-
-                if author not in self.authors and author != "AutoModerator":
-                    self.authors.append(author)
-        else:
-            Logging().info('Comment -')
+        self.authors.extend(authors)
 
 
 class Logging:
