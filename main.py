@@ -61,7 +61,7 @@ class Worker:
         Logging().debug('Worker started')
 
         self.dates = []
-        self.all_posts = ['https://www.reddit.com/r/facepalm/comments/15qw8np/i_dont_think_that_has_anything_to_do_with_race/']
+        self.all_posts = []
         self.authors = []
 
         if "second_date" in kwargs:
@@ -83,10 +83,10 @@ class Worker:
 
         self.start_browser(kwargs["profile_id"])
 
-        # for subreddit in kwargs["subreddits"]:
-        #     link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
-        #
-        #     self.get_posts(link=link)
+        for subreddit in kwargs["subreddits"]:
+            link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
+
+            self.get_posts(link=link)
 
         for post in self.all_posts:
             self.get_comments(link=post)
