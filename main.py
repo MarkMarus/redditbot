@@ -168,8 +168,6 @@ class Worker:
 
     def get_comments(self, link: str):
         comment_ids = []
-        last_len = None
-        counter = 0
 
         has_more = True
 
@@ -223,6 +221,36 @@ class Worker:
                 Logging().info('Button -')
 
                 has_more = False
+
+        comments = self.driver.execute_script("""
+            return document.querySelector('[class="_1YCqQVO-9r-Up6QPB9H6_4 _1YCqQVO-9r-Up6QPB9H6_4"]').querySelectorAll(':scope > div');
+        """)
+
+        if comments:
+            Logging().info('Comment +')
+
+            for comment in comments:
+
+                try:
+                    comment_id = comment.find_element(By.XPATH, './/div[@id]').get_attribute('id')
+                except:
+                    continue
+
+                if comment_id in comment_ids:
+                    continue
+
+                try:
+                    author = re.findall(r'/user/(.+)/',
+                                        comment.find_element(By.XPATH, './/a[@data-testid]').get_attribute('href'))[0]
+                except:
+                    continue
+
+                Logging().info(f'Comment author - {author}')
+
+                if author not in self.authors and author != "AutoModerator":
+                    self.authors.append(author)
+        else:
+            Logging().info('Comment -')
 
 
 class Logging:
