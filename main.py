@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import requests
 
 from selenium import webdriver
-from selenium.webdriver import ActionChains
+from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.wait import WebDriverWait
@@ -112,37 +112,56 @@ class Worker:
 
         Logging().debug(f'Redirected to {link}')
 
-        wait = WebDriverWait(self.driver, 60)
-
         while True:
 
-            posts = wait.until(
-                EC.presence_of_all_elements_located((By.TAG_NAME, 'shreddit-post'))
-            )
-
-            Logging().info(f'{len(posts)} posts found')
+            posts = None
+            while not posts:
+                posts = self.driver.execute_script("""
+                    return document.getElementsByClassName('Post');
+                """)
 
             for post in posts:
 
-                permalink = 'https://reddit.com' + post.get_attribute('permalink')
-
-                if permalink in self.all_posts:
+                try:
+                    href = self.driver.execute_script("return 'https://reddit.com/' + arguments[0].getElementsByTagName('a')[1];", post)
+                    relative_time = self.driver.execute_script(
+                        """return arguments[0].querySelector("[data-testid='post_timestamp']").textContent;""", post)
+                except:
                     continue
 
-                post_date = datetime.strptime(post.get_attribute('created-timestamp').split('T')[0], date_format)
+                if href not in self.all_posts:
+                    self.all_posts.append(href)
 
-                Logging().info(f'Post date - {post_date}')
+                    self.actions.scroll_to_element(post).perform()
+                else:
+                    continue
+
+                if "week" in relative_time:
+                    weeks = int(relative_time.split()[0])
+                    time_difference = timedelta(weeks=weeks)
+                elif "day" in relative_time:
+                    days = int(relative_time.split()[0])
+                    time_difference = timedelta(days=days)
+                elif "hour" in relative_time:
+                    hours = int(relative_time.split()[0])
+                    time_difference = timedelta(hours=hours)
+                elif "minute" in relative_time:
+                    minutes = int(relative_time.split()[0])
+                    time_difference = timedelta(minutes=minutes)
+                elif "second" in relative_time:
+                    seconds = int(relative_time.split()[0])
+                    time_difference = timedelta(seconds=seconds)
+                else:
+                    continue
+
+                post_date = datetime.now() - time_difference
+
+                Logging().info(f"Post time - {post_date}")
 
                 if post_date > datetime.strptime(self.dates[0], date_format):
                     continue
                 elif post_date < datetime.strptime(self.dates[-1], date_format):
                     return Logging().info(str(self.all_posts))
-
-                self.actions.scroll_to_element(post).perform()
-
-                self.all_posts.append(permalink)
-
-                time.sleep(0.1)
 
     def get_comments(self, link: str):
         comment_ids = []
@@ -172,14 +191,16 @@ class Worker:
 
                 if "moreComments" in comment_id:
                     comment.click()
-                    time.sleep(2)
+                    time.sleep(5)
                     break
                 else:
                     if comment_id in comment_ids:
                         continue
 
                     try:
-                        author = re.findall(r'/user/(.+)/', comment.find_element(By.XPATH, './/a[@data-testid]').get_attribute('href'))[0]
+                        author = re.findall(r'/user/(.+)/',
+                                            comment.find_element(By.XPATH, './/a[@data-testid]').get_attribute('href'))[
+                            0]
                     except:
                         continue
 
@@ -200,8 +221,8 @@ class Worker:
 
                         if counter >= 20:
                             return
-                        
-    
+
+
 class Logging:
     def info(self, message: str):
         with open('log.txt', 'a') as f:
