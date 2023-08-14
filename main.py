@@ -167,8 +167,6 @@ class Worker:
                     return Logging().info(str(self.all_posts))
 
     def get_comments(self, link: str):
-        comment_ids = []
-
         has_more = True
 
         self.driver.get(link)
@@ -223,23 +221,13 @@ class Worker:
                 has_more = False
 
         comments = self.driver.execute_script("""
-            return document.querySelector('[class="_1YCqQVO-9r-Up6QPB9H6_4 _1YCqQVO-9r-Up6QPB9H6_4"]').querySelectorAll(':scope > div');
+            return document.querySelectorAll("[class*='Post']");
         """)
 
         if comments:
             Logging().info('Comment +')
 
             for comment in comments:
-
-                try:
-                    comment_id = comment.find_element(By.XPATH, './/div[@id]').get_attribute('id')
-                except:
-                    continue
-
-                if comment_id in comment_ids:
-                    continue
-                else:
-                    comment_ids.append(comment_id)
 
                 try:
                     author = re.findall(r'/user/(.+)/',
