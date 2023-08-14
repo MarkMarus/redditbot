@@ -238,6 +238,8 @@ class Worker:
 
                 if comment_id in comment_ids:
                     continue
+                else:
+                    comment_ids.append(comment_id)
 
                 try:
                     author = re.findall(r'/user/(.+)/',
