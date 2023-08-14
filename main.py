@@ -1,16 +1,17 @@
 import re
 import time
+import json
 import threading
 from datetime import datetime, timedelta
 
 import requests
 
 from selenium import webdriver
-from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+# from selenium.webdriver.support.wait import WebDriverWait
+# from selenium.webdriver.support import expected_conditions as EC
 
 from ui.parser import Ui_MainWindow
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -60,7 +61,7 @@ class Worker:
         Logging().debug('Worker started')
 
         self.dates = []
-        self.all_posts = []
+        self.all_posts = ['https://www.reddit.com/r/facepalm/comments/15qw8np/i_dont_think_that_has_anything_to_do_with_race/']
         self.authors = []
 
         if "second_date" in kwargs:
@@ -82,13 +83,16 @@ class Worker:
 
         self.start_browser(kwargs["profile_id"])
 
-        for subreddit in kwargs["subreddits"]:
-            link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
-
-            self.get_posts(link=link)
+        # for subreddit in kwargs["subreddits"]:
+        #     link = subreddit + 'new/' if subreddit.endswith('/') else subreddit + '/new/'
+        #
+        #     self.get_posts(link=link)
 
         for post in self.all_posts:
             self.get_comments(link=post)
+
+        with open('data/data.json', 'w') as json_file:
+            json.dump({"data": self.authors}, json_file)
 
         time.sleep(666)
 
@@ -116,6 +120,7 @@ class Worker:
 
             posts = None
             while not posts:
+
                 posts = self.driver.execute_script("""
                     return document.getElementsByClassName('Post');
                 """)
@@ -123,17 +128,10 @@ class Worker:
             for post in posts:
 
                 try:
-                    href = self.driver.execute_script("return 'https://reddit.com/' + arguments[0].getElementsByTagName('a')[1];", post)
+                    href = self.driver.execute_script("return arguments[0].getElementsByTagName('a')[1].href;", post)
                     relative_time = self.driver.execute_script(
                         """return arguments[0].querySelector("[data-testid='post_timestamp']").textContent;""", post)
                 except:
-                    continue
-
-                if href not in self.all_posts:
-                    self.all_posts.append(href)
-
-                    self.actions.scroll_to_element(post).perform()
-                else:
                     continue
 
                 if "week" in relative_time:
@@ -158,6 +156,11 @@ class Worker:
 
                 Logging().info(f"Post time - {post_date}")
 
+                if href not in self.all_posts:
+                    self.all_posts.append(href)
+
+                    self.actions.scroll_to_element(post).perform()
+
                 if post_date > datetime.strptime(self.dates[0], date_format):
                     continue
                 elif post_date < datetime.strptime(self.dates[-1], date_format):
@@ -168,59 +171,58 @@ class Worker:
         last_len = None
         counter = 0
 
+        has_more = True
+
         self.driver.get(link)
 
         Logging().debug(f'Redirected to {link}')
 
-        while True:
+        while has_more:
 
-            comments = None
-            while comments is None:
-                comments = self.driver.execute_script("""
-                    return document.querySelector('[class="_1YCqQVO-9r-Up6QPB9H6_4 _1YCqQVO-9r-Up6QPB9H6_4"]').querySelectorAll(':scope > div');
-                """)
+            last_height = 0
+            counter = 0
+            while True:
 
-            Logging().info(f'{len(comments)} comments found')
+                height = int(self.driver.execute_script("""
+                    let body = document.body,
+                        html = document.documentElement;
+                    
+                    let height = Math.max( body.scrollHeight, body.offsetHeight, 
+                                           html.clientHeight, html.scrollHeight, html.offsetHeight );
+                    
+                    return height;
+                """))
 
-            for comment in comments:
+                Logging().info(f'Page height - {height}')
 
-                try:
-                    comment_id = comment.find_element(By.XPATH, './/div[@id]').get_attribute('id')
-                except:
-                    continue
-
-                if "moreComments" in comment_id:
-                    comment.click()
-                    time.sleep(5)
-                    break
-                else:
-                    if comment_id in comment_ids:
-                        continue
-
-                    try:
-                        author = re.findall(r'/user/(.+)/',
-                                            comment.find_element(By.XPATH, './/a[@data-testid]').get_attribute('href'))[
-                            0]
-                    except:
-                        continue
-
-                    Logging().info(f'Comment author - {author}')
-
-                    if author not in self.authors and author != "AutoModerator":
-                        self.authors.append(author)
-
-                        try:
-                            self.actions.scroll_to_element(comment).perform()
-                        except:
-                            pass
+                if last_height == height:
+                    if counter == 3:
+                        break
                     else:
-                        if last_len == len(comment_ids):
-                            counter += 1
-                        else:
-                            last_len = len(comment_ids)
+                        counter += 1
 
-                        if counter >= 20:
-                            return
+                        time.sleep(2)
+                else:
+                    last_height = height
+
+                    time.sleep(2)
+
+            time.sleep(1)
+
+            more_comments_button = self.driver.execute_script("""
+                return document.querySelectorAll("[id*='moreComments']");
+            """)
+
+            if more_comments_button:
+                Logging().info('Button +')
+
+                for button in more_comments_button:
+                    self.actions.click(button).perform()
+                    time.sleep(0.2)
+            else:
+                Logging().info('Button -')
+
+                has_more = False
 
 
 class Logging:
@@ -263,7 +265,7 @@ class DolphinAPI:
         return port
 
     def stop_profile(self, profile_id: str):
-        with open('token.txt') as f:
+        with open('data/token.txt') as f:
             token = f.readline()
 
         headers = {
