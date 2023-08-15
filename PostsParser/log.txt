@@ -543,3 +543,1069 @@
 [2023-08-15 19:30:32.915734] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ryz6a/a_reason_why_youtube_ads_are_a_problem/
 [2023-08-15 19:30:32.949743] INFO: Page height - 2609
 [2023-08-15 19:30:34.959013] INFO: Page height - 2609
+[2023-08-15 19:30:36.970142] INFO: Page height - 2609
+[2023-08-15 19:30:38.978256] INFO: Page height - 2609
+[2023-08-15 19:30:40.990453] INFO: Page height - 2609
+[2023-08-15 19:30:41.998585] INFO: Button -
+[2023-08-15 19:30:45.983292] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ryrdh/speedrun_to_non_family_friendly/
+[2023-08-15 19:30:46.010304] INFO: Page height - 2609
+[2023-08-15 19:30:48.019571] INFO: Page height - 2609
+[2023-08-15 19:30:50.027342] INFO: Page height - 2609
+[2023-08-15 19:30:52.034371] INFO: Page height - 2609
+[2023-08-15 19:30:54.040488] INFO: Page height - 2609
+[2023-08-15 19:30:55.047529] INFO: Button -
+[2023-08-15 19:31:00.221993] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ryn3y/bit_of_a_contradiction_imo/
+[2023-08-15 19:31:00.246997] INFO: Page height - 2609
+[2023-08-15 19:31:02.252531] INFO: Page height - 2609
+[2023-08-15 19:31:04.270534] INFO: Page height - 2609
+[2023-08-15 19:31:06.279173] INFO: Page height - 2609
+[2023-08-15 19:31:08.287239] INFO: Page height - 2609
+[2023-08-15 19:31:09.299997] INFO: Button -
+[2023-08-15 19:31:12.177833] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ryjgv/integrity_will_remain_a_pipe_dream/
+[2023-08-15 19:31:12.217839] INFO: Page height - 2609
+[2023-08-15 19:31:14.226537] INFO: Page height - 2609
+[2023-08-15 19:31:16.237569] INFO: Page height - 2609
+[2023-08-15 19:31:18.254530] INFO: Page height - 2609
+[2023-08-15 19:31:20.265344] INFO: Page height - 2609
+[2023-08-15 19:31:21.270570] INFO: Button -
+[2023-08-15 19:31:24.915099] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rxptw/these_darn_spoiled_kids_today_with_their_need_to/
+[2023-08-15 19:31:24.961107] INFO: Page height - 4000
+[2023-08-15 19:31:26.976890] INFO: Page height - 4000
+[2023-08-15 19:31:28.985398] INFO: Page height - 4000
+[2023-08-15 19:31:31.001415] INFO: Page height - 4000
+[2023-08-15 19:31:33.014164] INFO: Page height - 4000
+[2023-08-15 19:31:34.026600] INFO: Button -
+[2023-08-15 19:31:36.965975] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rxjp9/the_truth_social_meltdown_has_begun/
+[2023-08-15 19:31:37.009984] INFO: Page height - 3357
+[2023-08-15 19:31:39.025719] INFO: Page height - 3357
+[2023-08-15 19:31:41.041739] INFO: Page height - 3357
+[2023-08-15 19:31:43.050895] INFO: Page height - 3357
+[2023-08-15 19:31:45.057761] INFO: Page height - 3357
+[2023-08-15 19:31:46.069836] INFO: Button -
+[2023-08-15 19:31:49.647290] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rxhyv/no_i_want_disney_to_drag_it_out_since_he_is/
+[2023-08-15 19:31:49.691299] INFO: Page height - 5181
+[2023-08-15 19:31:51.696623] INFO: Page height - 5777
+[2023-08-15 19:31:53.715680] INFO: Page height - 5777
+[2023-08-15 19:31:55.730815] INFO: Page height - 5777
+[2023-08-15 19:31:57.736816] INFO: Page height - 5777
+[2023-08-15 19:31:59.750765] INFO: Page height - 5777
+[2023-08-15 19:32:00.759385] INFO: Button -
+[2023-08-15 19:32:04.935910] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rxc16/what_fruit_is_named_after_a_color/
+[2023-08-15 19:32:04.968916] INFO: Page height - 2857
+[2023-08-15 19:32:06.976808] INFO: Page height - 2857
+[2023-08-15 19:32:08.988080] INFO: Page height - 2857
+[2023-08-15 19:32:11.007982] INFO: Page height - 2857
+[2023-08-15 19:32:13.014878] INFO: Page height - 2857
+[2023-08-15 19:32:14.024807] INFO: Button -
+[2023-08-15 19:32:16.886366] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rx8he/thats_a_special_kind_of_idiot/
+[2023-08-15 19:32:16.919376] INFO: Page height - 2692
+[2023-08-15 19:32:18.934731] INFO: Page height - 2692
+[2023-08-15 19:32:20.948741] INFO: Page height - 2692
+[2023-08-15 19:32:22.956490] INFO: Page height - 2692
+[2023-08-15 19:32:24.970731] INFO: Page height - 2692
+[2023-08-15 19:32:25.978624] INFO: Button -
+[2023-08-15 19:32:29.539394] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rx87a/only_one_hot_chip_liar/
+[2023-08-15 19:32:29.613410] INFO: Page height - 5843
+[2023-08-15 19:32:31.631729] INFO: Page height - 8896
+[2023-08-15 19:32:33.641930] INFO: Page height - 8896
+[2023-08-15 19:32:35.648772] INFO: Page height - 8896
+[2023-08-15 19:32:37.658430] INFO: Page height - 8896
+[2023-08-15 19:32:39.667052] INFO: Page height - 8896
+[2023-08-15 19:32:40.685718] INFO: Button -
+[2023-08-15 19:32:43.852972] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rx6ou/nothing_suspicious_at_all/
+[2023-08-15 19:32:43.892982] INFO: Page height - 3794
+[2023-08-15 19:32:45.909195] INFO: Page height - 3794
+[2023-08-15 19:32:47.915630] INFO: Page height - 3794
+[2023-08-15 19:32:49.932402] INFO: Page height - 3794
+[2023-08-15 19:32:51.936829] INFO: Page height - 3794
+[2023-08-15 19:32:52.948441] INFO: Button -
+[2023-08-15 19:32:56.186318] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rx4m9/who_wants_to_tell_him/
+[2023-08-15 19:32:56.221316] INFO: Page height - 3274
+[2023-08-15 19:32:58.229082] INFO: Page height - 3274
+[2023-08-15 19:33:00.233927] INFO: Page height - 3274
+[2023-08-15 19:33:02.243763] INFO: Page height - 3274
+[2023-08-15 19:33:04.252666] INFO: Page height - 3274
+[2023-08-15 19:33:05.259994] INFO: Button -
+[2023-08-15 19:33:08.879695] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rx1ai/thinking_cbum_is_natural/
+[2023-08-15 19:33:08.942708] INFO: Page height - 2609
+[2023-08-15 19:33:10.955792] INFO: Page height - 2609
+[2023-08-15 19:33:12.959653] INFO: Page height - 2609
+[2023-08-15 19:33:14.979035] INFO: Page height - 2609
+[2023-08-15 19:33:16.996616] INFO: Page height - 2609
+[2023-08-15 19:33:18.009494] INFO: Button -
+[2023-08-15 19:33:22.182077] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rvuia/wow/
+[2023-08-15 19:33:22.233088] INFO: Page height - 5680
+[2023-08-15 19:33:24.251902] INFO: Page height - 11276
+[2023-08-15 19:33:26.256402] INFO: Page height - 11276
+[2023-08-15 19:33:28.275864] INFO: Page height - 11276
+[2023-08-15 19:33:30.290098] INFO: Page height - 11276
+[2023-08-15 19:33:32.306046] INFO: Page height - 11276
+[2023-08-15 19:33:33.311811] INFO: Button -
+[2023-08-15 19:33:36.311863] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rvqwt/its_called_terrible_facebook_memes_for_a_reason/
+[2023-08-15 19:33:36.346869] INFO: Page height - 2609
+[2023-08-15 19:33:38.361956] INFO: Page height - 2609
+[2023-08-15 19:33:40.367971] INFO: Page height - 2609
+[2023-08-15 19:33:42.375692] INFO: Page height - 2609
+[2023-08-15 19:33:44.388925] INFO: Page height - 2609
+[2023-08-15 19:33:45.396800] INFO: Button -
+[2023-08-15 19:33:48.658143] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rvoue/doctor_exposed_himself_masturbating_next_to_14/
+[2023-08-15 19:33:48.665144] INFO: Page height - 5274
+[2023-08-15 19:33:50.679950] INFO: Page height - 7017
+[2023-08-15 19:33:52.696040] INFO: Page height - 7017
+[2023-08-15 19:33:54.706143] INFO: Page height - 7017
+[2023-08-15 19:33:56.719576] INFO: Page height - 7017
+[2023-08-15 19:33:58.728960] INFO: Page height - 7017
+[2023-08-15 19:33:59.743374] INFO: Button -
+[2023-08-15 19:34:09.113727] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rvjrs/its_chinese_kids/
+[2023-08-15 19:34:09.130644] INFO: Page height - 2609
+[2023-08-15 19:34:11.143750] INFO: Page height - 2609
+[2023-08-15 19:34:13.158824] INFO: Page height - 2609
+[2023-08-15 19:34:15.166318] INFO: Page height - 2609
+[2023-08-15 19:34:17.174102] INFO: Page height - 2609
+[2023-08-15 19:34:18.185139] INFO: Button -
+[2023-08-15 19:34:23.699274] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rveat/cont_of_dick_riding_tate/
+[2023-08-15 19:34:23.746282] INFO: Page height - 3986
+[2023-08-15 19:34:25.757040] INFO: Page height - 3986
+[2023-08-15 19:34:27.765518] INFO: Page height - 3986
+[2023-08-15 19:34:29.775072] INFO: Page height - 3986
+[2023-08-15 19:34:31.789921] INFO: Page height - 3986
+[2023-08-15 19:34:32.808826] INFO: Button -
+[2023-08-15 19:34:36.758762] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rv2xb/_/
+[2023-08-15 19:34:36.803769] INFO: Page height - 4485
+[2023-08-15 19:34:38.818593] INFO: Page height - 4485
+[2023-08-15 19:34:40.836162] INFO: Page height - 4485
+[2023-08-15 19:34:42.855023] INFO: Page height - 4485
+[2023-08-15 19:34:44.859022] INFO: Page height - 4485
+[2023-08-15 19:34:45.867944] INFO: Button -
+[2023-08-15 19:34:50.314488] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rv28c/sexual_harrasment_is_an_obligation_to_your_partner/
+[2023-08-15 19:34:50.338494] INFO: Page height - 2609
+[2023-08-15 19:34:52.354035] INFO: Page height - 2609
+[2023-08-15 19:34:54.358542] INFO: Page height - 2609
+[2023-08-15 19:34:56.378203] INFO: Page height - 2609
+[2023-08-15 19:34:58.386136] INFO: Page height - 2609
+[2023-08-15 19:34:59.393198] INFO: Button -
+[2023-08-15 19:35:02.895297] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rv1zq/burnt_hawaii_house_for_sale_only_66666666/
+[2023-08-15 19:35:02.958310] INFO: Page height - 2609
+[2023-08-15 19:35:04.977439] INFO: Page height - 2609
+[2023-08-15 19:35:06.994096] INFO: Page height - 2609
+[2023-08-15 19:35:09.001943] INFO: Page height - 2609
+[2023-08-15 19:35:11.019156] INFO: Page height - 2609
+[2023-08-15 19:35:12.026050] INFO: Button -
+[2023-08-15 19:35:14.792466] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ruu20/why_life_isnt_a_247_holiday/
+[2023-08-15 19:35:14.821474] INFO: Page height - 2609
+[2023-08-15 19:35:16.834972] INFO: Page height - 2609
+[2023-08-15 19:35:18.849225] INFO: Page height - 2609
+[2023-08-15 19:35:20.855739] INFO: Page height - 2609
+[2023-08-15 19:35:22.860951] INFO: Page height - 2609
+[2023-08-15 19:35:23.872479] INFO: Button -
+[2023-08-15 19:35:27.191490] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rushd/yes_it_will/
+[2023-08-15 19:35:27.249686] INFO: Page height - 2769
+[2023-08-15 19:35:29.262373] INFO: Page height - 2769
+[2023-08-15 19:35:31.268533] INFO: Page height - 2769
+[2023-08-15 19:35:33.277055] INFO: Page height - 2769
+[2023-08-15 19:35:35.286498] INFO: Page height - 2769
+[2023-08-15 19:35:36.302074] INFO: Button -
+[2023-08-15 19:35:39.515492] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rus4w/americans_when_will_this_nightmare_end_also/
+[2023-08-15 19:35:39.553502] INFO: Page height - 4801
+[2023-08-15 19:35:41.572252] INFO: Page height - 4801
+[2023-08-15 19:35:43.581420] INFO: Page height - 4801
+[2023-08-15 19:35:45.593179] INFO: Page height - 4801
+[2023-08-15 19:35:47.605279] INFO: Page height - 4801
+[2023-08-15 19:35:48.611358] INFO: Button -
+[2023-08-15 19:35:51.306604] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ruppl/florida_serial_bank_robber_nabbed_in_mickey_mouse/
+[2023-08-15 19:35:51.318605] INFO: Page height - 2609
+[2023-08-15 19:35:53.333452] INFO: Page height - 2609
+[2023-08-15 19:35:55.343515] INFO: Page height - 2609
+[2023-08-15 19:35:57.362216] INFO: Page height - 2609
+[2023-08-15 19:35:59.398915] INFO: Page height - 2609
+[2023-08-15 19:36:00.410110] INFO: Button -
+[2023-08-15 19:36:04.699597] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rulz9/do_i_even_need_to_explain/
+[2023-08-15 19:36:04.739607] INFO: Page height - 3339
+[2023-08-15 19:36:06.746010] INFO: Page height - 3339
+[2023-08-15 19:36:08.750941] INFO: Page height - 3339
+[2023-08-15 19:36:10.762728] INFO: Page height - 3339
+[2023-08-15 19:36:12.777233] INFO: Page height - 3339
+[2023-08-15 19:36:13.792203] INFO: Button -
+[2023-08-15 19:36:16.879525] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ru4tx/blindsided_michael_oher_claims_he_was_not_adopted/
+[2023-08-15 19:36:16.895527] INFO: Page height - 2609
+[2023-08-15 19:36:18.906160] INFO: Page height - 2609
+[2023-08-15 19:36:20.921188] INFO: Page height - 2609
+[2023-08-15 19:36:22.927748] INFO: Page height - 2609
+[2023-08-15 19:36:24.936770] INFO: Page height - 2609
+[2023-08-15 19:36:25.942223] INFO: Button -
+[2023-08-15 19:36:28.815161] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rtjxz/kids_solve_all_problems/
+[2023-08-15 19:36:28.848167] INFO: Page height - 2609
+[2023-08-15 19:36:30.857188] INFO: Page height - 2609
+[2023-08-15 19:36:32.867965] INFO: Page height - 2609
+[2023-08-15 19:36:34.885332] INFO: Page height - 2609
+[2023-08-15 19:36:36.890093] INFO: Page height - 2609
+[2023-08-15 19:36:37.903544] INFO: Button -
+[2023-08-15 19:36:43.761203] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rtf9m/got_me_good/
+[2023-08-15 19:36:43.799210] INFO: Page height - 3259
+[2023-08-15 19:36:45.814406] INFO: Page height - 3259
+[2023-08-15 19:36:47.823453] INFO: Page height - 3259
+[2023-08-15 19:36:49.834472] INFO: Page height - 3259
+[2023-08-15 19:36:51.845403] INFO: Page height - 3259
+[2023-08-15 19:36:52.858441] INFO: Button -
+[2023-08-15 19:36:57.181556] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rsx9n/multiple_billboards_like_these_around_myrtle/
+[2023-08-15 19:36:57.253572] INFO: Page height - 4703
+[2023-08-15 19:36:59.261322] INFO: Page height - 4703
+[2023-08-15 19:37:01.270070] INFO: Page height - 4703
+[2023-08-15 19:37:03.286541] INFO: Page height - 4703
+[2023-08-15 19:37:05.300144] INFO: Page height - 4703
+[2023-08-15 19:37:06.313261] INFO: Button -
+[2023-08-15 19:37:09.522345] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rsw4a/just_w_h_a_t/
+[2023-08-15 19:37:09.537350] INFO: Page height - 2609
+[2023-08-15 19:37:11.543417] INFO: Page height - 2609
+[2023-08-15 19:37:13.559385] INFO: Page height - 2609
+[2023-08-15 19:37:15.569449] INFO: Page height - 2609
+[2023-08-15 19:37:17.575615] INFO: Page height - 2609
+[2023-08-15 19:37:18.591430] INFO: Button -
+[2023-08-15 19:37:21.793435] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rsnfl/community_notes_strike_again/
+[2023-08-15 19:37:21.826458] INFO: Page height - 2849
+[2023-08-15 19:37:23.840487] INFO: Page height - 2849
+[2023-08-15 19:37:25.846309] INFO: Page height - 2849
+[2023-08-15 19:37:27.854575] INFO: Page height - 2849
+[2023-08-15 19:37:29.869031] INFO: Page height - 2849
+[2023-08-15 19:37:30.879017] INFO: Button -
+[2023-08-15 19:37:34.028015] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rsif1/do_you_find_this_embarrassing/
+[2023-08-15 19:37:34.041016] INFO: Page height - 2891
+[2023-08-15 19:37:36.051470] INFO: Page height - 2891
+[2023-08-15 19:37:38.064441] INFO: Page height - 2891
+[2023-08-15 19:37:40.082401] INFO: Page height - 2891
+[2023-08-15 19:37:42.096212] INFO: Page height - 2891
+[2023-08-15 19:37:43.100841] INFO: Button -
+[2023-08-15 19:37:46.909930] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rsbnl/guy_gets_nightclub_name_tattooed_onto_his_body/
+[2023-08-15 19:37:46.937936] INFO: Page height - 2609
+[2023-08-15 19:37:48.947334] INFO: Page height - 2609
+[2023-08-15 19:37:50.962367] INFO: Page height - 2609
+[2023-08-15 19:37:52.974942] INFO: Page height - 2609
+[2023-08-15 19:37:54.979497] INFO: Page height - 2609
+[2023-08-15 19:37:55.985617] INFO: Button -
+[2023-08-15 19:37:59.546631] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rrwlf/who/
+[2023-08-15 19:37:59.565636] INFO: Page height - 3707
+[2023-08-15 19:38:01.583434] INFO: Page height - 3707
+[2023-08-15 19:38:03.602372] INFO: Page height - 3707
+[2023-08-15 19:38:05.620648] INFO: Page height - 3707
+[2023-08-15 19:38:07.632879] INFO: Page height - 3707
+[2023-08-15 19:38:08.640785] INFO: Button -
+[2023-08-15 19:38:12.612811] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rrr5s/do_you_think_they_charged_him_for_the_applause/
+[2023-08-15 19:38:12.644818] INFO: Page height - 2609
+[2023-08-15 19:38:14.657623] INFO: Page height - 2609
+[2023-08-15 19:38:16.662680] INFO: Page height - 2609
+[2023-08-15 19:38:18.676501] INFO: Page height - 2609
+[2023-08-15 19:38:20.692753] INFO: Page height - 2609
+[2023-08-15 19:38:21.701282] INFO: Button -
+[2023-08-15 19:38:24.936683] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rroy3/the_best_puncher_in_mma_cub_killer_swansons_best/
+[2023-08-15 19:38:24.964690] INFO: Page height - 2609
+[2023-08-15 19:38:26.976254] INFO: Page height - 2609
+[2023-08-15 19:38:28.986860] INFO: Page height - 2609
+[2023-08-15 19:38:30.996458] INFO: Page height - 2609
+[2023-08-15 19:38:33.010440] INFO: Page height - 2609
+[2023-08-15 19:38:34.028187] INFO: Button -
+[2023-08-15 19:38:38.611860] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rre4o/meatball_ron_has_a_thought/
+[2023-08-15 19:38:38.671875] INFO: Page height - 5284
+[2023-08-15 19:38:40.690571] INFO: Page height - 16671
+[2023-08-15 19:38:42.701379] INFO: Page height - 28644
+[2023-08-15 19:38:44.710178] INFO: Page height - 28644
+[2023-08-15 19:38:46.718583] INFO: Page height - 28644
+[2023-08-15 19:38:48.729472] INFO: Page height - 28644
+[2023-08-15 19:38:50.743956] INFO: Page height - 28644
+[2023-08-15 19:38:51.754720] INFO: Button +
+[2023-08-15 19:38:59.302380] INFO: Page height - 29100
+[2023-08-15 19:39:01.317482] INFO: Page height - 30215
+[2023-08-15 19:39:03.334747] INFO: Page height - 30215
+[2023-08-15 19:39:05.341870] INFO: Page height - 30215
+[2023-08-15 19:39:07.352205] INFO: Page height - 30215
+[2023-08-15 19:39:09.359347] INFO: Page height - 30215
+[2023-08-15 19:39:10.369502] INFO: Button +
+[2023-08-15 19:39:11.290131] INFO: Page height - 30312
+[2023-08-15 19:39:13.308684] INFO: Page height - 30312
+[2023-08-15 19:39:15.326752] INFO: Page height - 30312
+[2023-08-15 19:39:17.331688] INFO: Page height - 30312
+[2023-08-15 19:39:19.335383] INFO: Page height - 30312
+[2023-08-15 19:39:20.355571] INFO: Button -
+[2023-08-15 19:39:25.230029] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rr92x/race_is_never_an_excuse/
+[2023-08-15 19:39:25.275038] INFO: Page height - 4942
+[2023-08-15 19:39:27.287205] INFO: Page height - 4942
+[2023-08-15 19:39:29.305237] INFO: Page height - 4942
+[2023-08-15 19:39:31.324524] INFO: Page height - 4942
+[2023-08-15 19:39:33.343613] INFO: Page height - 4942
+[2023-08-15 19:39:34.353568] INFO: Button -
+[2023-08-15 19:39:37.810412] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rqx0n/just_how_stupid/
+[2023-08-15 19:39:37.846419] INFO: Page height - 3117
+[2023-08-15 19:39:39.851198] INFO: Page height - 3117
+[2023-08-15 19:39:41.870105] INFO: Page height - 3117
+[2023-08-15 19:39:43.878552] INFO: Page height - 3117
+[2023-08-15 19:39:45.895890] INFO: Page height - 3117
+[2023-08-15 19:39:46.909754] INFO: Button -
+[2023-08-15 19:39:50.216282] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rqu14/an_8_year_old_shouldnt_have_to_do_this/
+[2023-08-15 19:39:50.230283] INFO: Page height - 2760
+[2023-08-15 19:39:52.247671] INFO: Page height - 2760
+[2023-08-15 19:39:54.266040] INFO: Page height - 2760
+[2023-08-15 19:39:56.275880] INFO: Page height - 2760
+[2023-08-15 19:39:58.285022] INFO: Page height - 2760
+[2023-08-15 19:39:59.297591] INFO: Button -
+[2023-08-15 19:40:02.941418] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rql6k/the_blindside_was_a_lie/
+[2023-08-15 19:40:02.986430] INFO: Page height - 5686
+[2023-08-15 19:40:04.996314] INFO: Page height - 7405
+[2023-08-15 19:40:07.010755] INFO: Page height - 7405
+[2023-08-15 19:40:09.030433] INFO: Page height - 7405
+[2023-08-15 19:40:11.044204] INFO: Page height - 7405
+[2023-08-15 19:40:13.061533] INFO: Page height - 7405
+[2023-08-15 19:40:14.075775] INFO: Button -
+[2023-08-15 19:40:17.780086] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rqi89/aint_no_way/
+[2023-08-15 19:40:17.831097] INFO: Page height - 5808
+[2023-08-15 19:40:19.849632] INFO: Page height - 6443
+[2023-08-15 19:40:21.868640] INFO: Page height - 6443
+[2023-08-15 19:40:23.887633] INFO: Page height - 6443
+[2023-08-15 19:40:25.905872] INFO: Page height - 6443
+[2023-08-15 19:40:27.924335] INFO: Page height - 6443
+[2023-08-15 19:40:28.935246] INFO: Button -
+[2023-08-15 19:40:33.965425] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rqha7/i_will_take_insider_trading_for_200_alex_yes_it/
+[2023-08-15 19:40:34.009434] INFO: Page height - 5771
+[2023-08-15 19:40:36.014046] INFO: Page height - 10739
+[2023-08-15 19:40:38.019694] INFO: Page height - 10739
+[2023-08-15 19:40:40.025720] INFO: Page height - 10739
+[2023-08-15 19:40:42.034629] INFO: Page height - 10739
+[2023-08-15 19:40:44.039583] INFO: Page height - 10739
+[2023-08-15 19:40:45.050373] INFO: Button -
+[2023-08-15 19:40:48.749614] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rqdvr/someone_knows_rico_charges_are_incoming/
+[2023-08-15 19:40:48.795624] INFO: Page height - 5999
+[2023-08-15 19:40:50.809957] INFO: Page height - 6298
+[2023-08-15 19:40:52.825814] INFO: Page height - 6298
+[2023-08-15 19:40:54.836099] INFO: Page height - 6298
+[2023-08-15 19:40:56.841296] INFO: Page height - 6298
+[2023-08-15 19:40:58.860461] INFO: Page height - 6298
+[2023-08-15 19:40:59.872538] INFO: Button -
+[2023-08-15 19:41:02.726728] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rq78t/did_he_just_approve_his_own_comment_with_his/
+[2023-08-15 19:41:02.766740] INFO: Page height - 2609
+[2023-08-15 19:41:04.777827] INFO: Page height - 2609
+[2023-08-15 19:41:06.784433] INFO: Page height - 2609
+[2023-08-15 19:41:08.790072] INFO: Page height - 2609
+[2023-08-15 19:41:10.799450] INFO: Page height - 2609
+[2023-08-15 19:41:11.806388] INFO: Button -
+[2023-08-15 19:41:16.522331] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rq6gs/ted_cruz_is_angry/
+[2023-08-15 19:41:16.601348] INFO: Page height - 5358
+[2023-08-15 19:41:18.620429] INFO: Page height - 14657
+[2023-08-15 19:41:20.636655] INFO: Page height - 27681
+[2023-08-15 19:41:22.648769] INFO: Page height - 32523
+[2023-08-15 19:41:24.663769] INFO: Page height - 32523
+[2023-08-15 19:41:26.678535] INFO: Page height - 32523
+[2023-08-15 19:41:28.683006] INFO: Page height - 32523
+[2023-08-15 19:41:30.702990] INFO: Page height - 32523
+[2023-08-15 19:41:31.722827] INFO: Button +
+[2023-08-15 19:42:08.919402] INFO: Page height - 48514
+[2023-08-15 19:42:10.936660] INFO: Page height - 48700
+[2023-08-15 19:42:12.948792] INFO: Page height - 48700
+[2023-08-15 19:42:14.966659] INFO: Page height - 48700
+[2023-08-15 19:42:16.984854] INFO: Page height - 48700
+[2023-08-15 19:42:19.002737] INFO: Page height - 48700
+[2023-08-15 19:42:20.020086] INFO: Button +
+[2023-08-15 19:42:26.833265] INFO: Page height - 50731
+[2023-08-15 19:42:28.842061] INFO: Page height - 51074
+[2023-08-15 19:42:30.860901] INFO: Page height - 51074
+[2023-08-15 19:42:32.865775] INFO: Page height - 51074
+[2023-08-15 19:42:34.872907] INFO: Page height - 51074
+[2023-08-15 19:42:36.878100] INFO: Page height - 51074
+[2023-08-15 19:42:37.891906] INFO: Button +
+[2023-08-15 19:42:39.067079] INFO: Page height - 51074
+[2023-08-15 19:42:41.071617] INFO: Page height - 61105
+[2023-08-15 19:42:43.085845] INFO: Page height - 66262
+[2023-08-15 19:42:45.104033] INFO: Page height - 66262
+[2023-08-15 19:42:47.107936] INFO: Page height - 66262
+[2023-08-15 19:42:49.126192] INFO: Page height - 66262
+[2023-08-15 19:42:50.136421] INFO: Button +
+[2023-08-15 19:43:16.203859] INFO: Page height - 69907
+[2023-08-15 19:43:18.213895] INFO: Page height - 69907
+[2023-08-15 19:43:20.218724] INFO: Page height - 69907
+[2023-08-15 19:43:22.232876] INFO: Page height - 69907
+[2023-08-15 19:43:24.239004] INFO: Page height - 69907
+[2023-08-15 19:43:25.250962] INFO: Button +
+[2023-08-15 19:43:30.131991] INFO: Page height - 69839
+[2023-08-15 19:43:32.138269] INFO: Page height - 73291
+[2023-08-15 19:43:34.145157] INFO: Page height - 79172
+[2023-08-15 19:43:36.154339] INFO: Page height - 79172
+[2023-08-15 19:43:38.171588] INFO: Page height - 79172
+[2023-08-15 19:43:40.185685] INFO: Page height - 79172
+[2023-08-15 19:43:42.196143] INFO: Page height - 79172
+[2023-08-15 19:43:43.208384] INFO: Button +
+[2023-08-15 19:43:49.661058] INFO: Page height - 81568
+[2023-08-15 19:43:51.673117] INFO: Page height - 92178
+[2023-08-15 19:43:53.681241] INFO: Page height - 92178
+[2023-08-15 19:43:55.700544] INFO: Page height - 92178
+[2023-08-15 19:43:57.715076] INFO: Page height - 92178
+[2023-08-15 19:43:59.732248] INFO: Page height - 92178
+[2023-08-15 19:44:00.748874] INFO: Button +
+[2023-08-15 19:44:05.293717] INFO: Page height - 94337
+[2023-08-15 19:44:07.305796] INFO: Page height - 104034
+[2023-08-15 19:44:09.324124] INFO: Page height - 104034
+[2023-08-15 19:44:11.333179] INFO: Page height - 104034
+[2023-08-15 19:44:13.340482] INFO: Page height - 104034
+[2023-08-15 19:44:15.346807] INFO: Page height - 104034
+[2023-08-15 19:44:16.358073] INFO: Button +
+[2023-08-15 19:44:21.218534] INFO: Page height - 106403
+[2023-08-15 19:44:23.226792] INFO: Page height - 114863
+[2023-08-15 19:44:25.233745] INFO: Page height - 114863
+[2023-08-15 19:44:27.241694] INFO: Page height - 114863
+[2023-08-15 19:44:29.253782] INFO: Page height - 114863
+[2023-08-15 19:44:31.270804] INFO: Page height - 114863
+[2023-08-15 19:44:32.284926] INFO: Button +
+[2023-08-15 19:44:41.282183] INFO: Page height - 117904
+[2023-08-15 19:44:43.300512] INFO: Page height - 125347
+[2023-08-15 19:44:45.315815] INFO: Page height - 125347
+[2023-08-15 19:44:47.322864] INFO: Page height - 125347
+[2023-08-15 19:44:49.330277] INFO: Page height - 125347
+[2023-08-15 19:44:51.347888] INFO: Page height - 125347
+[2023-08-15 19:44:52.365793] INFO: Button +
+[2023-08-15 19:44:52.444971] INFO: Page height - 125347
+[2023-08-15 19:44:54.463379] INFO: Page height - 125347
+[2023-08-15 19:44:56.476453] INFO: Page height - 125347
+[2023-08-15 19:44:58.496261] INFO: Page height - 125347
+[2023-08-15 19:44:59.507946] INFO: Button +
+[2023-08-15 19:44:59.586285] INFO: Page height - 125347
+[2023-08-15 19:45:01.598700] INFO: Page height - 125347
+[2023-08-15 19:45:03.633787] INFO: Page height - 125347
+[2023-08-15 19:45:05.702162] INFO: Page height - 125347
+[2023-08-15 19:45:06.936442] INFO: Button +
+[2023-08-15 19:45:12.711867] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rq55b/guns_n_kids/
+[2023-08-15 19:45:12.743873] INFO: Page height - 2609
+[2023-08-15 19:45:14.760988] INFO: Page height - 2609
+[2023-08-15 19:45:16.779591] INFO: Page height - 2609
+[2023-08-15 19:45:18.798016] INFO: Page height - 2609
+[2023-08-15 19:45:20.806419] INFO: Page height - 2609
+[2023-08-15 19:45:21.820921] INFO: Button -
+[2023-08-15 19:45:26.462848] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rpzcj/average_fds_users/
+[2023-08-15 19:45:26.471850] INFO: Page height - 2609
+[2023-08-15 19:45:28.489230] INFO: Page height - 2609
+[2023-08-15 19:45:30.505410] INFO: Page height - 2609
+[2023-08-15 19:45:32.512018] INFO: Page height - 2609
+[2023-08-15 19:45:34.530507] INFO: Page height - 2609
+[2023-08-15 19:45:35.543278] INFO: Button -
+[2023-08-15 19:45:40.058374] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rps5w/at_this_point_i_dont_even_know_whether_this_is_a/
+[2023-08-15 19:45:40.074318] INFO: Page height - 4915
+[2023-08-15 19:45:42.120159] INFO: Page height - 14725
+[2023-08-15 19:45:44.134215] INFO: Page height - 25796
+[2023-08-15 19:45:46.146763] INFO: Page height - 30220
+[2023-08-15 19:45:48.154403] INFO: Page height - 30220
+[2023-08-15 19:45:50.159257] INFO: Page height - 30220
+[2023-08-15 19:45:52.163288] INFO: Page height - 30220
+[2023-08-15 19:45:54.181101] INFO: Page height - 30220
+[2023-08-15 19:45:55.194084] INFO: Button +
+[2023-08-15 19:46:29.260809] INFO: Page height - 37160
+[2023-08-15 19:46:31.274543] INFO: Page height - 37160
+[2023-08-15 19:46:33.279192] INFO: Page height - 37160
+[2023-08-15 19:46:35.297625] INFO: Page height - 37160
+[2023-08-15 19:46:37.302405] INFO: Page height - 37160
+[2023-08-15 19:46:38.322949] INFO: Button +
+[2023-08-15 19:46:42.651155] INFO: Page height - 37550
+[2023-08-15 19:46:44.655388] INFO: Page height - 46920
+[2023-08-15 19:46:46.665412] INFO: Page height - 48201
+[2023-08-15 19:46:48.675114] INFO: Page height - 48201
+[2023-08-15 19:46:50.692591] INFO: Page height - 48201
+[2023-08-15 19:46:52.699580] INFO: Page height - 48201
+[2023-08-15 19:46:54.704453] INFO: Page height - 48201
+[2023-08-15 19:46:55.713390] INFO: Button +
+[2023-08-15 19:47:01.549168] INFO: Page height - 48930
+[2023-08-15 19:47:03.568055] INFO: Page height - 50354
+[2023-08-15 19:47:05.579281] INFO: Page height - 50354
+[2023-08-15 19:47:07.590769] INFO: Page height - 50354
+[2023-08-15 19:47:09.607445] INFO: Page height - 50354
+[2023-08-15 19:47:11.623911] INFO: Page height - 50354
+[2023-08-15 19:47:12.639140] INFO: Button +
+[2023-08-15 19:47:13.761208] INFO: Page height - 50430
+[2023-08-15 19:47:15.772448] INFO: Page height - 50430
+[2023-08-15 19:47:17.787603] INFO: Page height - 50430
+[2023-08-15 19:47:19.794485] INFO: Page height - 50430
+[2023-08-15 19:47:21.810031] INFO: Page height - 50430
+[2023-08-15 19:47:22.825343] INFO: Button +
+[2023-08-15 19:47:22.844347] INFO: Page height - 50430
+[2023-08-15 19:47:24.858101] INFO: Page height - 50430
+[2023-08-15 19:47:26.862544] INFO: Page height - 50430
+[2023-08-15 19:47:28.869494] INFO: Page height - 50430
+[2023-08-15 19:47:29.881331] INFO: Button +
+[2023-08-15 19:47:29.900335] INFO: Page height - 50430
+[2023-08-15 19:47:31.904769] INFO: Page height - 50430
+[2023-08-15 19:47:33.912363] INFO: Page height - 50430
+[2023-08-15 19:47:35.931670] INFO: Page height - 50430
+[2023-08-15 19:47:36.958436] INFO: Button +
+[2023-08-15 19:47:42.214626] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rpn2s/he_had_to_ask/
+[2023-08-15 19:47:42.229628] INFO: Page height - 2728
+[2023-08-15 19:47:44.245332] INFO: Page height - 2728
+[2023-08-15 19:47:46.260484] INFO: Page height - 2728
+[2023-08-15 19:47:48.271821] INFO: Page height - 2728
+[2023-08-15 19:47:50.284788] INFO: Page height - 2728
+[2023-08-15 19:47:51.302001] INFO: Button -
+[2023-08-15 19:47:54.527899] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15roha5/twitter_user_lies_about_being_racially_targeted/
+[2023-08-15 19:47:54.568910] INFO: Page height - 4541
+[2023-08-15 19:47:56.575351] INFO: Page height - 4541
+[2023-08-15 19:47:58.584218] INFO: Page height - 4541
+[2023-08-15 19:48:00.600167] INFO: Page height - 4541
+[2023-08-15 19:48:02.607778] INFO: Page height - 4541
+[2023-08-15 19:48:03.619657] INFO: Button -
+[2023-08-15 19:48:07.095364] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15roe7b/this_would_immediately_lead_to_the_most_bloody/
+[2023-08-15 19:48:07.115369] INFO: Page height - 5260
+[2023-08-15 19:48:09.131605] INFO: Page height - 6121
+[2023-08-15 19:48:11.142774] INFO: Page height - 6121
+[2023-08-15 19:48:13.159253] INFO: Page height - 6121
+[2023-08-15 19:48:15.177757] INFO: Page height - 6121
+[2023-08-15 19:48:17.184237] INFO: Page height - 6121
+[2023-08-15 19:48:18.191215] INFO: Button -
+[2023-08-15 19:48:21.368416] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ro02d/girl_on_instagram_admits_that_she_loves_drunk/
+[2023-08-15 19:48:21.384731] INFO: Page height - 2609
+[2023-08-15 19:48:23.399264] INFO: Page height - 2609
+[2023-08-15 19:48:25.416530] INFO: Page height - 2609
+[2023-08-15 19:48:27.432490] INFO: Page height - 2609
+[2023-08-15 19:48:29.447461] INFO: Page height - 2609
+[2023-08-15 19:48:30.454815] INFO: Button -
+[2023-08-15 19:48:33.234326] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnzqu/i_recommend_this_place_1010/
+[2023-08-15 19:48:33.262330] INFO: Page height - 2609
+[2023-08-15 19:48:35.280673] INFO: Page height - 2609
+[2023-08-15 19:48:37.294743] INFO: Page height - 2609
+[2023-08-15 19:48:39.313624] INFO: Page height - 2609
+[2023-08-15 19:48:41.318096] INFO: Page height - 2609
+[2023-08-15 19:48:42.330135] INFO: Button -
+[2023-08-15 19:48:46.506401] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnv89/well_this_is_the_most_realistic_ive_been_towards/
+[2023-08-15 19:48:46.515403] INFO: Page height - 2609
+[2023-08-15 19:48:48.526744] INFO: Page height - 2609
+[2023-08-15 19:48:50.531362] INFO: Page height - 2609
+[2023-08-15 19:48:52.542301] INFO: Page height - 2609
+[2023-08-15 19:48:54.555833] INFO: Page height - 2609
+[2023-08-15 19:48:55.574409] INFO: Button -
+[2023-08-15 19:48:58.027167] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnun4/telling_them_not_to_throw_a_party_throwing_a/
+[2023-08-15 19:48:58.058174] INFO: Page height - 2609
+[2023-08-15 19:49:00.076878] INFO: Page height - 2609
+[2023-08-15 19:49:02.085276] INFO: Page height - 2609
+[2023-08-15 19:49:04.097531] INFO: Page height - 2609
+[2023-08-15 19:49:06.108472] INFO: Page height - 2609
+[2023-08-15 19:49:07.122021] INFO: Button -
+[2023-08-15 19:49:09.722329] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnsi7/could_not_agree_more/
+[2023-08-15 19:49:09.754338] INFO: Page height - 2609
+[2023-08-15 19:49:11.758712] INFO: Page height - 2609
+[2023-08-15 19:49:13.777351] INFO: Page height - 2609
+[2023-08-15 19:49:15.781763] INFO: Page height - 2609
+[2023-08-15 19:49:17.799954] INFO: Page height - 2609
+[2023-08-15 19:49:18.809808] INFO: Button -
+[2023-08-15 19:49:21.543733] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnrla/true_words/
+[2023-08-15 19:49:21.557736] INFO: Page height - 2609
+[2023-08-15 19:49:23.569473] INFO: Page height - 2609
+[2023-08-15 19:49:25.574401] INFO: Page height - 2609
+[2023-08-15 19:49:27.587884] INFO: Page height - 2609
+[2023-08-15 19:49:29.604887] INFO: Page height - 2609
+[2023-08-15 19:49:30.618402] INFO: Button -
+[2023-08-15 19:49:34.371074] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rnrbp/mcdonalds_can_pay_join_the_mcboycott/
+[2023-08-15 19:49:34.406081] INFO: Page height - 3448
+[2023-08-15 19:49:36.426576] INFO: Page height - 3448
+[2023-08-15 19:49:38.440449] INFO: Page height - 3448
+[2023-08-15 19:49:40.455450] INFO: Page height - 3448
+[2023-08-15 19:49:42.460767] INFO: Page height - 3448
+[2023-08-15 19:49:43.471771] INFO: Button -
+[2023-08-15 19:49:47.077267] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rn8mq/the_second_hand_embarrasment_is_real/
+[2023-08-15 19:49:47.083268] INFO: Page height - 4246
+[2023-08-15 19:49:49.096531] INFO: Page height - 4246
+[2023-08-15 19:49:51.108771] INFO: Page height - 4246
+[2023-08-15 19:49:53.120275] INFO: Page height - 4246
+[2023-08-15 19:49:55.133914] INFO: Page height - 4246
+[2023-08-15 19:49:56.143933] INFO: Button -
+[2023-08-15 19:50:00.958733] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rmwj1/only_in_america/
+[2023-08-15 19:50:01.018746] INFO: Page height - 5138
+[2023-08-15 19:50:03.034739] INFO: Page height - 18453
+[2023-08-15 19:50:05.039654] INFO: Page height - 21337
+[2023-08-15 19:50:07.047949] INFO: Page height - 21337
+[2023-08-15 19:50:09.063637] INFO: Page height - 21337
+[2023-08-15 19:50:11.082768] INFO: Page height - 21337
+[2023-08-15 19:50:13.086468] INFO: Page height - 21337
+[2023-08-15 19:50:14.101862] INFO: Button -
+[2023-08-15 19:50:17.983145] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rmfc6/who/
+[2023-08-15 19:50:18.026152] INFO: Page height - 5615
+[2023-08-15 19:50:20.041837] INFO: Page height - 6087
+[2023-08-15 19:50:22.049832] INFO: Page height - 6087
+[2023-08-15 19:50:24.057975] INFO: Page height - 6087
+[2023-08-15 19:50:26.067888] INFO: Page height - 6087
+[2023-08-15 19:50:28.072564] INFO: Page height - 6087
+[2023-08-15 19:50:29.088274] INFO: Button -
+[2023-08-15 19:50:33.910852] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rlxck/the_biggest_lie/
+[2023-08-15 19:50:33.924854] INFO: Page height - 4483
+[2023-08-15 19:50:35.942581] INFO: Page height - 13537
+[2023-08-15 19:50:37.948078] INFO: Page height - 21338
+[2023-08-15 19:50:39.957735] INFO: Page height - 21338
+[2023-08-15 19:50:41.964647] INFO: Page height - 21338
+[2023-08-15 19:50:43.972229] INFO: Page height - 21338
+[2023-08-15 19:50:45.991844] INFO: Page height - 21338
+[2023-08-15 19:50:47.002970] INFO: Button +
+[2023-08-15 19:50:52.879262] INFO: Page height - 23002
+[2023-08-15 19:50:54.896477] INFO: Page height - 23002
+[2023-08-15 19:50:56.908611] INFO: Page height - 23002
+[2023-08-15 19:50:58.924965] INFO: Page height - 23002
+[2023-08-15 19:51:00.936783] INFO: Page height - 23002
+[2023-08-15 19:51:01.945624] INFO: Button +
+[2023-08-15 19:51:01.987634] INFO: Page height - 23002
+[2023-08-15 19:51:03.998654] INFO: Page height - 23002
+[2023-08-15 19:51:06.014010] INFO: Page height - 23002
+[2023-08-15 19:51:08.030977] INFO: Page height - 23002
+[2023-08-15 19:51:09.040936] INFO: Button +
+[2023-08-15 19:51:09.094912] INFO: Page height - 23002
+[2023-08-15 19:51:11.104529] INFO: Page height - 23002
+[2023-08-15 19:51:13.112061] INFO: Page height - 23002
+[2023-08-15 19:51:15.116670] INFO: Page height - 23002
+[2023-08-15 19:51:16.124827] INFO: Button +
+[2023-08-15 19:51:20.433205] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rlvv8/my_dad_had_this_flag_hanging_up_outside_of_my/
+[2023-08-15 19:51:20.471214] INFO: Page height - 2619
+[2023-08-15 19:51:22.478119] INFO: Page height - 2619
+[2023-08-15 19:51:24.495702] INFO: Page height - 2619
+[2023-08-15 19:51:26.503264] INFO: Page height - 2619
+[2023-08-15 19:51:28.521716] INFO: Page height - 2619
+[2023-08-15 19:51:29.531754] INFO: Button -
+[2023-08-15 19:51:34.820087] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rlv59/outside_movie_theater_in_oklahoma/
+[2023-08-15 19:51:34.869097] INFO: Page height - 2609
+[2023-08-15 19:51:36.887639] INFO: Page height - 2609
+[2023-08-15 19:51:38.892641] INFO: Page height - 2609
+[2023-08-15 19:51:40.905191] INFO: Page height - 2609
+[2023-08-15 19:51:42.912710] INFO: Page height - 2609
+[2023-08-15 19:51:43.919927] INFO: Button -
+[2023-08-15 19:51:46.204646] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rlv0p/the_subreddit_that_froths_at_the_mouth_to_claim/
+[2023-08-15 19:51:46.230654] INFO: Page height - 2609
+[2023-08-15 19:51:48.245219] INFO: Page height - 2609
+[2023-08-15 19:51:50.263661] INFO: Page height - 2609
+[2023-08-15 19:51:52.273006] INFO: Page height - 2609
+[2023-08-15 19:51:54.289978] INFO: Page height - 2609
+[2023-08-15 19:51:55.300745] INFO: Button -
+[2023-08-15 19:51:59.926802] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rlmn6/good_guys_with_guns/
+[2023-08-15 19:51:59.973799] INFO: Page height - 4747
+[2023-08-15 19:52:01.978753] INFO: Page height - 4999
+[2023-08-15 19:52:03.989747] INFO: Page height - 4999
+[2023-08-15 19:52:06.008184] INFO: Page height - 4999
+[2023-08-15 19:52:08.022819] INFO: Page height - 4999
+[2023-08-15 19:52:10.038228] INFO: Page height - 4999
+[2023-08-15 19:52:11.048851] INFO: Button -
+[2023-08-15 19:52:14.407845] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rktis/ancient_wisdom/
+[2023-08-15 19:52:14.442854] INFO: Page height - 4125
+[2023-08-15 19:52:16.448061] INFO: Page height - 4125
+[2023-08-15 19:52:18.455791] INFO: Page height - 4125
+[2023-08-15 19:52:20.473263] INFO: Page height - 4125
+[2023-08-15 19:52:22.492083] INFO: Page height - 4125
+[2023-08-15 19:52:23.508737] INFO: Button -
+[2023-08-15 19:52:27.180474] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rkpw9/it_would_be_easy_they_said/
+[2023-08-15 19:52:27.190477] INFO: Page height - 3062
+[2023-08-15 19:52:29.211094] INFO: Page height - 3062
+[2023-08-15 19:52:31.214687] INFO: Page height - 3062
+[2023-08-15 19:52:33.233046] INFO: Page height - 3062
+[2023-08-15 19:52:35.242829] INFO: Page height - 3062
+[2023-08-15 19:52:36.252336] INFO: Button -
+[2023-08-15 19:52:39.268884] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rknb8/vegan_employment_opportunities/
+[2023-08-15 19:52:39.298891] INFO: Page height - 2609
+[2023-08-15 19:52:41.312221] INFO: Page height - 2609
+[2023-08-15 19:52:43.324770] INFO: Page height - 2609
+[2023-08-15 19:52:45.329546] INFO: Page height - 2609
+[2023-08-15 19:52:47.337218] INFO: Page height - 2609
+[2023-08-15 19:52:48.348909] INFO: Button -
+[2023-08-15 19:52:51.720191] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rka0y/asking_for_a_friend/
+[2023-08-15 19:52:51.759200] INFO: Page height - 2609
+[2023-08-15 19:52:53.769138] INFO: Page height - 2609
+[2023-08-15 19:52:55.774825] INFO: Page height - 2609
+[2023-08-15 19:52:57.787779] INFO: Page height - 2609
+[2023-08-15 19:52:59.807739] INFO: Page height - 2609
+[2023-08-15 19:53:00.815262] INFO: Button -
+[2023-08-15 19:53:04.421081] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rk1p8/heyyy_ayyy_goodbye/
+[2023-08-15 19:53:04.508098] INFO: Page height - 2609
+[2023-08-15 19:53:06.526292] INFO: Page height - 2609
+[2023-08-15 19:53:08.541171] INFO: Page height - 2609
+[2023-08-15 19:53:10.554943] INFO: Page height - 2609
+[2023-08-15 19:53:12.560905] INFO: Page height - 2609
+[2023-08-15 19:53:13.571613] INFO: Button -
+[2023-08-15 19:53:17.951300] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rjabg/it_only_works_if_youre_immortal/
+[2023-08-15 19:53:17.997310] INFO: Page height - 4787
+[2023-08-15 19:53:20.015443] INFO: Page height - 5221
+[2023-08-15 19:53:22.033859] INFO: Page height - 5221
+[2023-08-15 19:53:24.038688] INFO: Page height - 5221
+[2023-08-15 19:53:26.045958] INFO: Page height - 5221
+[2023-08-15 19:53:28.063574] INFO: Page height - 5221
+[2023-08-15 19:53:29.074826] INFO: Button -
+[2023-08-15 19:53:33.694460] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rj61s/what_was_her_thought_process/
+[2023-08-15 19:53:33.778489] INFO: Page height - 4723
+[2023-08-15 19:53:35.787274] INFO: Page height - 15667
+[2023-08-15 19:53:37.801091] INFO: Page height - 26047
+[2023-08-15 19:53:39.819484] INFO: Page height - 26047
+[2023-08-15 19:53:41.825635] INFO: Page height - 26047
+[2023-08-15 19:53:43.838241] INFO: Page height - 26047
+[2023-08-15 19:53:45.851277] INFO: Page height - 26047
+[2023-08-15 19:53:46.858949] INFO: Button +
+[2023-08-15 19:53:48.448494] INFO: Page height - 26123
+[2023-08-15 19:53:50.467099] INFO: Page height - 26123
+[2023-08-15 19:53:52.479268] INFO: Page height - 26123
+[2023-08-15 19:53:54.490371] INFO: Page height - 26123
+[2023-08-15 19:53:56.503243] INFO: Page height - 26123
+[2023-08-15 19:53:57.513185] INFO: Button +
+[2023-08-15 19:53:58.420123] INFO: Page height - 26220
+[2023-08-15 19:54:00.431309] INFO: Page height - 26220
+[2023-08-15 19:54:02.445324] INFO: Page height - 26220
+[2023-08-15 19:54:04.461330] INFO: Page height - 26220
+[2023-08-15 19:54:06.476199] INFO: Page height - 26220
+[2023-08-15 19:54:07.484945] INFO: Button -
+[2023-08-15 19:54:11.022129] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rikw0/the_dangers_of_getting_you_child_vaccinated/
+[2023-08-15 19:54:11.068141] INFO: Page height - 3812
+[2023-08-15 19:54:13.072172] INFO: Page height - 3812
+[2023-08-15 19:54:15.080130] INFO: Page height - 3812
+[2023-08-15 19:54:17.093395] INFO: Page height - 3812
+[2023-08-15 19:54:19.108197] INFO: Page height - 3812
+[2023-08-15 19:54:20.118986] INFO: Button -
+[2023-08-15 19:54:24.582789] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rie5j/loving_the_added_context/
+[2023-08-15 19:54:24.634799] INFO: Page height - 2741
+[2023-08-15 19:54:26.643242] INFO: Page height - 2741
+[2023-08-15 19:54:28.653093] INFO: Page height - 2741
+[2023-08-15 19:54:30.664981] INFO: Page height - 2741
+[2023-08-15 19:54:32.669008] INFO: Page height - 2741
+[2023-08-15 19:54:33.688218] INFO: Button -
+[2023-08-15 19:54:39.863188] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ri77t/my_mothers_attempt_to_secure_her_vehicle/
+[2023-08-15 19:54:39.901199] INFO: Page height - 2614
+[2023-08-15 19:54:41.909104] INFO: Page height - 2614
+[2023-08-15 19:54:43.918072] INFO: Page height - 2614
+[2023-08-15 19:54:45.934136] INFO: Page height - 2614
+[2023-08-15 19:54:47.951839] INFO: Page height - 2614
+[2023-08-15 19:54:48.956333] INFO: Button -
+[2023-08-15 19:54:52.551163] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15ri0jh/i_guess_someones_packing_heat_this_upcoming/
+[2023-08-15 19:54:52.567167] INFO: Page height - 3267
+[2023-08-15 19:54:54.578075] INFO: Page height - 3267
+[2023-08-15 19:54:56.588117] INFO: Page height - 3267
+[2023-08-15 19:54:58.601054] INFO: Page height - 3267
+[2023-08-15 19:55:00.612069] INFO: Page height - 3267
+[2023-08-15 19:55:01.617411] INFO: Button -
+[2023-08-15 19:55:05.401433] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rhngx/getting_shamed_for_proposing_at_kfc/
+[2023-08-15 19:55:05.414438] INFO: Page height - 2609
+[2023-08-15 19:55:07.433149] INFO: Page height - 2609
+[2023-08-15 19:55:09.437325] INFO: Page height - 2609
+[2023-08-15 19:55:11.445119] INFO: Page height - 2609
+[2023-08-15 19:55:13.451044] INFO: Page height - 2609
+[2023-08-15 19:55:14.455429] INFO: Button -
+[2023-08-15 19:55:18.729178] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rh6oi/not_be_a_baby_machine/
+[2023-08-15 19:55:18.776189] INFO: Page height - 3244
+[2023-08-15 19:55:20.786105] INFO: Page height - 3244
+[2023-08-15 19:55:22.805116] INFO: Page height - 3244
+[2023-08-15 19:55:24.818552] INFO: Page height - 3244
+[2023-08-15 19:55:26.835225] INFO: Page height - 3244
+[2023-08-15 19:55:27.842468] INFO: Button -
+[2023-08-15 19:55:30.667984] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rg568/is_this_what_they_expect_us_to_do_when_they_ask/
+[2023-08-15 19:55:30.702991] INFO: Page height - 2609
+[2023-08-15 19:55:32.712490] INFO: Page height - 2609
+[2023-08-15 19:55:34.729751] INFO: Page height - 2609
+[2023-08-15 19:55:36.742204] INFO: Page height - 2609
+[2023-08-15 19:55:38.752379] INFO: Page height - 2609
+[2023-08-15 19:55:39.757174] INFO: Button -
+[2023-08-15 19:55:42.559734] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rg2hl/too_bad_she_was_hot_but_she_would_not_recognize/
+[2023-08-15 19:55:42.598741] INFO: Page height - 2609
+[2023-08-15 19:55:44.615151] INFO: Page height - 2609
+[2023-08-15 19:55:46.625305] INFO: Page height - 2609
+[2023-08-15 19:55:48.639632] INFO: Page height - 2609
+[2023-08-15 19:55:50.656203] INFO: Page height - 2609
+[2023-08-15 19:55:51.667484] INFO: Button -
+[2023-08-15 19:55:56.671586] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rg0f2/yeah_throw_a_rock_at_a_hornets_nest/
+[2023-08-15 19:55:56.748604] INFO: Page height - 2785
+[2023-08-15 19:55:58.769313] INFO: Page height - 2785
+[2023-08-15 19:56:00.781348] INFO: Page height - 2785
+[2023-08-15 19:56:02.791190] INFO: Page height - 2785
+[2023-08-15 19:56:04.809451] INFO: Page height - 2785
+[2023-08-15 19:56:05.815532] INFO: Button -
+[2023-08-15 19:56:09.192827] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rfubw/what_the_fuck/
+[2023-08-15 19:56:09.284848] INFO: Page height - 3438
+[2023-08-15 19:56:11.291644] INFO: Page height - 3438
+[2023-08-15 19:56:13.304209] INFO: Page height - 3438
+[2023-08-15 19:56:15.322210] INFO: Page height - 3438
+[2023-08-15 19:56:17.326175] INFO: Page height - 3438
+[2023-08-15 19:56:18.339329] INFO: Button -
+[2023-08-15 19:56:24.236489] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rfklm/excuse_me_wtf/
+[2023-08-15 19:56:24.275498] INFO: Page height - 3929
+[2023-08-15 19:56:26.288823] INFO: Page height - 13736
+[2023-08-15 19:56:28.320726] INFO: Page height - 24060
+[2023-08-15 19:56:30.327744] INFO: Page height - 26236
+[2023-08-15 19:56:32.342395] INFO: Page height - 26236
+[2023-08-15 19:56:34.353917] INFO: Page height - 26236
+[2023-08-15 19:56:36.368316] INFO: Page height - 26236
+[2023-08-15 19:56:38.383327] INFO: Page height - 26236
+[2023-08-15 19:56:39.400800] INFO: Button +
+[2023-08-15 19:57:11.236160] INFO: Page height - 33761
+[2023-08-15 19:57:13.249572] INFO: Page height - 33761
+[2023-08-15 19:57:15.264718] INFO: Page height - 33761
+[2023-08-15 19:57:17.283485] INFO: Page height - 33761
+[2023-08-15 19:57:19.294380] INFO: Page height - 33761
+[2023-08-15 19:57:20.305843] INFO: Button +
+[2023-08-15 19:57:26.513355] INFO: Page height - 35173
+[2023-08-15 19:57:28.531842] INFO: Page height - 35173
+[2023-08-15 19:57:30.548040] INFO: Page height - 35173
+[2023-08-15 19:57:32.557390] INFO: Page height - 35173
+[2023-08-15 19:57:34.572713] INFO: Page height - 35173
+[2023-08-15 19:57:35.584399] INFO: Button +
+[2023-08-15 19:57:36.482209] INFO: Page height - 35173
+[2023-08-15 19:57:38.500695] INFO: Page height - 44751
+[2023-08-15 19:57:40.505943] INFO: Page height - 45955
+[2023-08-15 19:57:42.521390] INFO: Page height - 45955
+[2023-08-15 19:57:44.539401] INFO: Page height - 45955
+[2023-08-15 19:57:46.545757] INFO: Page height - 45955
+[2023-08-15 19:57:47.554493] INFO: Button +
+[2023-08-15 19:57:54.850490] INFO: Page height - 46547
+[2023-08-15 19:57:56.869817] INFO: Page height - 55291
+[2023-08-15 19:57:58.877435] INFO: Page height - 56683
+[2023-08-15 19:58:00.882806] INFO: Page height - 56683
+[2023-08-15 19:58:02.891794] INFO: Page height - 56683
+[2023-08-15 19:58:04.901003] INFO: Page height - 56683
+[2023-08-15 19:58:06.906892] INFO: Page height - 56683
+[2023-08-15 19:58:07.920921] INFO: Button +
+[2023-08-15 19:58:10.146977] INFO: Page height - 56683
+[2023-08-15 19:58:12.164290] INFO: Page height - 62924
+[2023-08-15 19:58:14.173891] INFO: Page height - 68017
+[2023-08-15 19:58:16.179497] INFO: Page height - 68017
+[2023-08-15 19:58:18.198446] INFO: Page height - 68017
+[2023-08-15 19:58:20.217835] INFO: Page height - 68017
+[2023-08-15 19:58:21.236704] INFO: Button +
+[2023-08-15 19:58:26.778615] INFO: Page height - 70427
+[2023-08-15 19:58:28.795720] INFO: Page height - 80606
+[2023-08-15 19:58:30.814507] INFO: Page height - 80606
+[2023-08-15 19:58:32.819989] INFO: Page height - 80606
+[2023-08-15 19:58:34.829563] INFO: Page height - 80606
+[2023-08-15 19:58:36.835136] INFO: Page height - 80606
+[2023-08-15 19:58:37.848234] INFO: Button +
+[2023-08-15 19:58:39.180988] INFO: Page height - 80606
+[2023-08-15 19:58:41.186510] INFO: Page height - 87380
+[2023-08-15 19:58:43.194485] INFO: Page height - 91652
+[2023-08-15 19:58:45.203868] INFO: Page height - 91652
+[2023-08-15 19:58:47.214656] INFO: Page height - 91652
+[2023-08-15 19:58:49.229113] INFO: Page height - 91652
+[2023-08-15 19:58:50.240345] INFO: Button +
+[2023-08-15 19:58:51.754150] INFO: Page height - 91652
+[2023-08-15 19:58:53.820567] INFO: Page height - 99427
+[2023-08-15 19:58:55.834449] INFO: Page height - 102456
+[2023-08-15 19:58:57.840990] INFO: Page height - 102456
+[2023-08-15 19:58:59.849639] INFO: Page height - 102456
+[2023-08-15 19:59:01.866328] INFO: Page height - 102456
+[2023-08-15 19:59:02.883862] INFO: Button +
+[2023-08-15 19:59:07.012345] INFO: Page height - 102642
+[2023-08-15 19:59:09.017677] INFO: Page height - 108230
+[2023-08-15 19:59:11.027787] INFO: Page height - 112494
+[2023-08-15 19:59:13.031861] INFO: Page height - 112494
+[2023-08-15 19:59:15.036408] INFO: Page height - 112494
+[2023-08-15 19:59:17.053846] INFO: Page height - 112494
+[2023-08-15 19:59:19.069089] INFO: Page height - 112494
+[2023-08-15 19:59:20.081039] INFO: Button +
+[2023-08-15 19:59:25.338521] INFO: Page height - 115417
+[2023-08-15 19:59:27.353585] INFO: Page height - 115767
+[2023-08-15 19:59:29.363654] INFO: Page height - 115767
+[2023-08-15 19:59:31.367681] INFO: Page height - 115767
+[2023-08-15 19:59:33.377338] INFO: Page height - 115767
+[2023-08-15 19:59:35.396137] INFO: Page height - 115767
+[2023-08-15 19:59:36.410723] INFO: Button -
+[2023-08-15 19:59:40.056858] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15re756/a_child_was_traumatized_by_poster_of_people_of/
+[2023-08-15 19:59:40.124874] INFO: Page height - 2609
+[2023-08-15 19:59:42.135603] INFO: Page height - 2609
+[2023-08-15 19:59:44.149428] INFO: Page height - 2609
+[2023-08-15 19:59:46.155947] INFO: Page height - 2609
+[2023-08-15 19:59:48.171682] INFO: Page height - 2609
+[2023-08-15 19:59:49.177821] INFO: Button -
+[2023-08-15 19:59:53.698795] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15re1y5/how_to_respond_to_people_who_share_posts_like/
+[2023-08-15 19:59:53.717742] INFO: Page height - 5246
+[2023-08-15 19:59:55.723202] INFO: Page height - 5246
+[2023-08-15 19:59:57.727745] INFO: Page height - 5246
+[2023-08-15 19:59:59.738993] INFO: Page height - 5246
+[2023-08-15 20:00:01.747077] INFO: Page height - 5246
+[2023-08-15 20:00:02.765269] INFO: Button -
+[2023-08-15 20:00:05.690491] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rdy3z/maybe_if_you_are_trying_to_promote_your_brand/
+[2023-08-15 20:00:05.710495] INFO: Page height - 2609
+[2023-08-15 20:00:07.723981] INFO: Page height - 2609
+[2023-08-15 20:00:09.728887] INFO: Page height - 2609
+[2023-08-15 20:00:11.734181] INFO: Page height - 2609
+[2023-08-15 20:00:13.741921] INFO: Page height - 2609
+[2023-08-15 20:00:14.745532] INFO: Button -
+[2023-08-15 20:00:19.750107] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rdkga/this_crypto_mine_was_placed_in_a_small_town_its/
+[2023-08-15 20:00:19.809121] INFO: Page height - 3358
+[2023-08-15 20:00:21.819027] INFO: Page height - 3358
+[2023-08-15 20:00:23.836821] INFO: Page height - 3358
+[2023-08-15 20:00:25.855789] INFO: Page height - 3358
+[2023-08-15 20:00:27.868742] INFO: Page height - 3358
+[2023-08-15 20:00:28.876217] INFO: Button -
+[2023-08-15 20:00:32.194766] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rc93p/someone_get_the_guinness_book_of_world_records_on/
+[2023-08-15 20:00:32.222772] INFO: Page height - 2609
+[2023-08-15 20:00:34.239061] INFO: Page height - 2609
+[2023-08-15 20:00:36.259067] INFO: Page height - 2609
+[2023-08-15 20:00:38.274085] INFO: Page height - 2609
+[2023-08-15 20:00:40.290702] INFO: Page height - 2609
+[2023-08-15 20:00:41.309243] INFO: Button -
+[2023-08-15 20:00:44.912357] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rc6fh/looks_kinda_similar/
+[2023-08-15 20:00:44.975372] INFO: Page height - 3464
+[2023-08-15 20:00:46.980086] INFO: Page height - 3464
+[2023-08-15 20:00:48.992978] INFO: Page height - 3464
+[2023-08-15 20:00:51.005436] INFO: Page height - 3464
+[2023-08-15 20:00:53.014743] INFO: Page height - 3464
+[2023-08-15 20:00:54.022138] INFO: Button -
+[2023-08-15 20:01:00.725593] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rbtx4/genz_the_worst/
+[2023-08-15 20:01:00.738594] INFO: Page height - 5218
+[2023-08-15 20:01:02.753113] INFO: Page height - 5968
+[2023-08-15 20:01:04.767568] INFO: Page height - 5968
+[2023-08-15 20:01:06.772186] INFO: Page height - 5968
+[2023-08-15 20:01:08.789199] INFO: Page height - 5968
+[2023-08-15 20:01:10.801999] INFO: Page height - 5968
+[2023-08-15 20:01:11.809253] INFO: Button -
+[2023-08-15 20:01:17.105131] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rbp8b/i_have_no_faith_in_humanity/
+[2023-08-15 20:01:17.118134] INFO: Page height - 4744
+[2023-08-15 20:01:19.131726] INFO: Page height - 13059
+[2023-08-15 20:01:21.141347] INFO: Page height - 23553
+[2023-08-15 20:01:23.145507] INFO: Page height - 30201
+[2023-08-15 20:01:25.150169] INFO: Page height - 30201
+[2023-08-15 20:01:27.168209] INFO: Page height - 30201
+[2023-08-15 20:01:29.186862] INFO: Page height - 30201
+[2023-08-15 20:01:31.203232] INFO: Page height - 30201
+[2023-08-15 20:01:32.215506] INFO: Button +
+[2023-08-15 20:02:14.680160] INFO: Page height - 43339
+[2023-08-15 20:02:16.695793] INFO: Page height - 43339
+[2023-08-15 20:02:18.705102] INFO: Page height - 43339
+[2023-08-15 20:02:20.711343] INFO: Page height - 43339
+[2023-08-15 20:02:22.727910] INFO: Page height - 43339
+[2023-08-15 20:02:23.736316] INFO: Button +
+[2023-08-15 20:02:28.779192] INFO: Page height - 43981
+[2023-08-15 20:02:30.784324] INFO: Page height - 53245
+[2023-08-15 20:02:32.799380] INFO: Page height - 59432
+[2023-08-15 20:02:34.816430] INFO: Page height - 59432
+[2023-08-15 20:02:36.833488] INFO: Page height - 59432
+[2023-08-15 20:02:38.851876] INFO: Page height - 59432
+[2023-08-15 20:02:40.859342] INFO: Page height - 59432
+[2023-08-15 20:02:41.872194] INFO: Button +
+[2023-08-15 20:03:12.771411] INFO: Page height - 61398
+[2023-08-15 20:03:14.780377] INFO: Page height - 66925
+[2023-08-15 20:03:16.798827] INFO: Page height - 66925
+[2023-08-15 20:03:18.809389] INFO: Page height - 66925
+[2023-08-15 20:03:20.816081] INFO: Page height - 66925
+[2023-08-15 20:03:22.822506] INFO: Page height - 66925
+[2023-08-15 20:03:23.838805] INFO: Button +
+[2023-08-15 20:03:37.508012] INFO: Page height - 69501
+[2023-08-15 20:03:39.525076] INFO: Page height - 73461
+[2023-08-15 20:03:41.543156] INFO: Page height - 73461
+[2023-08-15 20:03:43.555289] INFO: Page height - 73461
+[2023-08-15 20:03:45.560192] INFO: Page height - 73461
+[2023-08-15 20:03:47.564490] INFO: Page height - 73461
+[2023-08-15 20:03:48.577531] INFO: Button +
+[2023-08-15 20:03:48.586534] INFO: Page height - 73461
+[2023-08-15 20:03:50.592492] INFO: Page height - 73461
+[2023-08-15 20:03:52.608949] INFO: Page height - 73461
+[2023-08-15 20:03:54.623933] INFO: Page height - 73461
+[2023-08-15 20:03:55.635505] INFO: Button +
+[2023-08-15 20:03:55.645509] INFO: Page height - 73461
+[2023-08-15 20:03:57.666202] INFO: Page height - 73461
+[2023-08-15 20:03:59.680610] INFO: Page height - 73461
+[2023-08-15 20:04:01.692526] INFO: Page height - 73461
+[2023-08-15 20:04:02.702151] INFO: Button +
+[2023-08-15 20:04:05.751242] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rbeq7/when_the_pool_declines_your_offer_funnyshorts/
+[2023-08-15 20:04:05.782248] INFO: Page height - 2609
+[2023-08-15 20:04:07.788599] INFO: Page height - 2609
+[2023-08-15 20:04:09.802591] INFO: Page height - 2609
+[2023-08-15 20:04:11.814024] INFO: Page height - 2609
+[2023-08-15 20:04:13.832576] INFO: Page height - 2609
+[2023-08-15 20:04:14.844501] INFO: Button -
+[2023-08-15 20:04:18.569100] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rb80z/what/
+[2023-08-15 20:04:18.612110] INFO: Page height - 3056
+[2023-08-15 20:04:20.625752] INFO: Page height - 3056
+[2023-08-15 20:04:22.636350] INFO: Page height - 3056
+[2023-08-15 20:04:24.651512] INFO: Page height - 3056
+[2023-08-15 20:04:26.655524] INFO: Page height - 3056
+[2023-08-15 20:04:27.661525] INFO: Button -
+[2023-08-15 20:04:31.050842] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15rauy8/elon_cant_be_bothered_to_change_his_name_on_his/
+[2023-08-15 20:04:31.085850] INFO: Page height - 2609
+[2023-08-15 20:04:33.100329] INFO: Page height - 2609
+[2023-08-15 20:04:35.104595] INFO: Page height - 2609
+[2023-08-15 20:04:37.120520] INFO: Page height - 2609
+[2023-08-15 20:04:39.134308] INFO: Page height - 2609
+[2023-08-15 20:04:40.138969] INFO: Button -
+[2023-08-15 20:04:44.072551] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15raas0/mountain_dew_flavor_predicted_maui_fires_sure/
+[2023-08-15 20:04:44.109553] INFO: Page height - 2821
+[2023-08-15 20:04:46.120820] INFO: Page height - 2821
+[2023-08-15 20:04:48.125663] INFO: Page height - 2821
+[2023-08-15 20:04:50.132418] INFO: Page height - 2821
+[2023-08-15 20:04:52.141595] INFO: Page height - 2821
+[2023-08-15 20:04:53.150700] INFO: Button -
+[2023-08-15 20:04:56.322941] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r9u2d/is_anyone_else_seeing_these_ads_wtf/
+[2023-08-15 20:04:56.363950] INFO: Page height - 5046
+[2023-08-15 20:04:58.379422] INFO: Page height - 5046
+[2023-08-15 20:05:00.398640] INFO: Page height - 5046
+[2023-08-15 20:05:02.416972] INFO: Page height - 5046
+[2023-08-15 20:05:04.432612] INFO: Page height - 5046
+[2023-08-15 20:05:05.439676] INFO: Button -
+[2023-08-15 20:05:11.228068] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r9s73/8_years_later/
+[2023-08-15 20:05:11.316089] INFO: Page height - 5153
+[2023-08-15 20:05:13.321636] INFO: Page height - 7651
+[2023-08-15 20:05:15.340446] INFO: Page height - 7651
+[2023-08-15 20:05:17.352742] INFO: Page height - 7651
+[2023-08-15 20:05:19.363659] INFO: Page height - 7651
+[2023-08-15 20:05:21.376241] INFO: Page height - 7651
+[2023-08-15 20:05:22.384840] INFO: Button -
+[2023-08-15 20:05:25.714482] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r9nke/every_accusation_a_confession/
+[2023-08-15 20:05:25.724483] INFO: Page height - 2609
+[2023-08-15 20:05:27.732810] INFO: Page height - 2609
+[2023-08-15 20:05:29.751652] INFO: Page height - 2609
+[2023-08-15 20:05:31.760656] INFO: Page height - 2609
+[2023-08-15 20:05:33.774755] INFO: Page height - 2609
+[2023-08-15 20:05:34.785505] INFO: Button -
+[2023-08-15 20:05:37.788863] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r9grf/what_is_this_logic/
+[2023-08-15 20:05:37.828874] INFO: Page height - 4819
+[2023-08-15 20:05:39.837607] INFO: Page height - 4819
+[2023-08-15 20:05:41.851714] INFO: Page height - 4819
+[2023-08-15 20:05:43.860928] INFO: Page height - 4819
+[2023-08-15 20:05:45.879760] INFO: Page height - 4819
+[2023-08-15 20:05:46.889685] INFO: Button -
+[2023-08-15 20:05:49.861108] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r95hm/darwinpalooza/
+[2023-08-15 20:05:49.925123] INFO: Page height - 3495
+[2023-08-15 20:05:51.932724] INFO: Page height - 3495
+[2023-08-15 20:05:53.946390] INFO: Page height - 3495
+[2023-08-15 20:05:55.957035] INFO: Page height - 3495
+[2023-08-15 20:05:57.968747] INFO: Page height - 3495
+[2023-08-15 20:05:58.976470] INFO: Button -
+[2023-08-15 20:06:02.210104] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r8yy0/sorry_not_sorry/
+[2023-08-15 20:06:02.281118] INFO: Page height - 3591
+[2023-08-15 20:06:04.288437] INFO: Page height - 3591
+[2023-08-15 20:06:06.296190] INFO: Page height - 3591
+[2023-08-15 20:06:08.301715] INFO: Page height - 3591
+[2023-08-15 20:06:10.312037] INFO: Page height - 3591
+[2023-08-15 20:06:11.323783] INFO: Button -
+[2023-08-15 20:06:14.418856] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r8y9v/on_a_post_about_a_candidates_abortion_views_so_if/
+[2023-08-15 20:06:14.458864] INFO: Page height - 2911
+[2023-08-15 20:06:16.463227] INFO: Page height - 2911
+[2023-08-15 20:06:18.480744] INFO: Page height - 2911
+[2023-08-15 20:06:20.489745] INFO: Page height - 2911
+[2023-08-15 20:06:22.504549] INFO: Page height - 2911
+[2023-08-15 20:06:23.513861] INFO: Button -
+[2023-08-15 20:06:29.151757] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r8r1w/traumatized_by_holding_hands/
+[2023-08-15 20:06:29.200769] INFO: Page height - 4937
+[2023-08-15 20:06:31.222759] INFO: Page height - 11607
+[2023-08-15 20:06:33.236545] INFO: Page height - 24403
+[2023-08-15 20:06:35.247436] INFO: Page height - 24962
+[2023-08-15 20:06:37.264369] INFO: Page height - 24962
+[2023-08-15 20:06:39.268636] INFO: Page height - 24962
+[2023-08-15 20:06:41.273244] INFO: Page height - 24962
+[2023-08-15 20:06:43.290790] INFO: Page height - 24962
+[2023-08-15 20:06:44.307368] INFO: Button +
+[2023-08-15 20:06:52.927967] INFO: Page height - 25345
+[2023-08-15 20:06:54.976522] INFO: Page height - 35441
+[2023-08-15 20:06:56.989601] INFO: Page height - 36252
+[2023-08-15 20:06:59.007553] INFO: Page height - 36252
+[2023-08-15 20:07:01.020910] INFO: Page height - 36252
+[2023-08-15 20:07:03.026648] INFO: Page height - 36252
+[2023-08-15 20:07:05.042976] INFO: Page height - 36252
+[2023-08-15 20:07:06.060490] INFO: Button +
+[2023-08-15 20:07:09.325909] INFO: Page height - 37399
+[2023-08-15 20:07:11.332816] INFO: Page height - 37399
+[2023-08-15 20:07:13.339271] INFO: Page height - 37399
+[2023-08-15 20:07:15.354548] INFO: Page height - 37399
+[2023-08-15 20:07:17.359867] INFO: Page height - 37399
+[2023-08-15 20:07:18.373917] INFO: Button +
+[2023-08-15 20:07:18.387919] INFO: Page height - 37399
+[2023-08-15 20:07:20.405042] INFO: Page height - 37399
+[2023-08-15 20:07:22.420247] INFO: Page height - 37399
+[2023-08-15 20:07:24.435704] INFO: Page height - 37399
+[2023-08-15 20:07:25.451314] INFO: Button +
+[2023-08-15 20:07:25.463316] INFO: Page height - 37399
+[2023-08-15 20:07:27.472728] INFO: Page height - 37399
+[2023-08-15 20:07:29.476636] INFO: Page height - 37399
+[2023-08-15 20:07:31.492795] INFO: Page height - 37399
+[2023-08-15 20:07:32.499944] INFO: Button +
+[2023-08-15 20:07:35.758209] DEBUG: Redirected to https://www.reddit.com/r/facepalm/comments/15r8hz7/transphobe_tries_to_argue_with_a_doctor_who_uses/
+[2023-08-15 20:07:35.844227] INFO: Page height - 2815
+[2023-08-15 20:07:37.851626] INFO: Page height - 2815
+[2023-08-15 20:07:39.868902] INFO: Page height - 2815
+[2023-08-15 20:07:41.878824] INFO: Page height - 2815
+[2023-08-15 20:07:43.895394] INFO: Page height - 2815
+[2023-08-15 20:07:44.913143] INFO: Button -
