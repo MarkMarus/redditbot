@@ -1,7 +1,116 @@
+import time
+import json
+import threading
+from datetime import datetime, timedelta
+
 import requests
 
-import time
-from datetime import datetime
+from selenium import webdriver
+from selenium.webdriver import ActionChains
+from selenium.webdriver.chrome.service import Service
+
+# from gui import Ui_MainWindow
+from PyQt5.QtWidgets import QMainWindow, QApplication
+
+
+class Worker:
+    def __init__(self):
+        Logging().debug('Worker started')
+
+        self.username = 'TomLoton'
+        self.profile_id = "134443580"
+
+        self.start_browser()
+
+    def start_browser(self):
+        options = webdriver.ChromeOptions()
+        options.add_argument('--disable-popup-blocking')
+        options.add_argument('--disable-blink-features=AutomationControlled')
+        options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DolphinAPI().start_profile(self.profile_id)}')
+
+        self.driver = webdriver.Chrome(service=Service('../chromedriver.exe'), options=options)
+        self.actions = ActionChains(self.driver)
+
+        self.driver.maximize_window()
+
+        Logging().debug('Browser started')
+
+    def create_chat(self):
+        self.driver.get("https://chat.reddit.com")
+
+        now = time.time()
+
+        create_button = None
+        while create_button is None:
+
+            try:
+                create_button = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('.container > rs-rooms-nav').shadowRoot.querySelector('a');
+                """)
+                create_button.click()
+
+                time.sleep(5)
+
+                self.input_username()
+            except:
+                if time.time() - now >= 30:
+                    return
+
+    def input_username(self):
+        now = time.time()
+
+        input_field = None
+        while input_field is None:
+
+            try:
+                input_field = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-create').shadowRoot.querySelector('rs-users-multiselect').shadowRoot.querySelector('input');
+                """)
+                input_field.click()
+                input_field.send_keys(self.username)
+
+                time.sleep(5)
+
+                self.click_user()
+            except:
+                if time.time() - now >= 30:
+                    return
+
+    def click_user(self):
+        now = time.time()
+
+        user = None
+        while user is None:
+
+            try:
+                user = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-create').shadowRoot.querySelector('rs-users-multiselect').shadowRoot.querySelector('li');
+                """)
+                user.click()
+
+                time.sleep(5)
+
+                self.click_start()
+            except:
+                if time.time() - now >= 30:
+                    return
+
+    def click_start(self):
+        now = time.time()
+
+        start_btn = None
+        while start_btn is None:
+
+            try:
+                start_btn = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-create').shadowRoot.querySelector('button');
+                """)
+                start_btn.click()
+
+                time.sleep(5)
+            except:
+                if time.time() - now >= 30:
+                    return
 
 
 class Logging:
@@ -74,3 +183,5 @@ class DolphinAPI:
 if __name__ == "__main__":
     with open('log.txt', 'w+') as f:
         f.write('')
+
+    Worker()
