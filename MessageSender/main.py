@@ -1,7 +1,9 @@
 import time
 import json
 import random
+import traceback
 import threading
+import multiprocessing
 from datetime import datetime
 
 import requests
@@ -10,19 +12,192 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 
-# from gui import Ui_MainWindow
-from PyQt5.QtWidgets import QMainWindow, QApplication
+from gui import Ui_MainWindow
+
+from PyQt5 import QtGui, QtCore
+from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QScrollArea, QLabel, QCheckBox
+
+
+class MainWindow(QMainWindow):
+    def __init__(self):
+        super().__init__()
+
+        self.setFixedSize(630, 481)
+
+        self.ui = Ui_MainWindow()
+        self.ui.setupUi(self)
+
+        threading.Thread(target=self.update_labels).start()
+
+        self.ui.start_btn.clicked.connect(self.start_worker)
+        self.ui.profiles_btn.clicked.connect(self.start_profiles)
+
+        Logging().debug('Interface is loaded')
+
+    def update_labels(self):
+        while True:
+
+            while True:
+
+                try:
+                    with open('../data/sender.json') as json_file:
+                        data = json.load(json_file)
+
+                    break
+                except:
+                    pass
+
+            self.ui.accounts_in_work.setText(str(data["accounts_in_work"]))
+            self.ui.messages_sent.setText(str(data["messages_sent"]))
+            self.ui.accounts_used.setText(str(data["accounts_used"]))
+
+    def start_worker(self):
+        messages = self.ui.list_messages.toPlainText().split('\n')
+        limit = int(self.ui.limit.text())
+        delay = float(self.ui.delay.text().replace(',', '.'))
+
+        with open('../data/checked_profiles.txt') as f:
+            profiles = [line.strip() for line in f.readlines() if line.strip()]
+
+        while True:
+
+            try:
+                with open('../data/sender.json', 'r') as json_file:
+                    data = json.load(json_file)
+                    data["accounts_in_work"] = len(profiles)
+
+                break
+            except:
+                pass
+
+        while True:
+
+            try:
+                with open('../data/sender.json', 'w') as json_file:
+                    json.dump(data, json_file, indent=4)
+
+                break
+            except:
+                pass
+
+        for profile in profiles:
+            multiprocessing.Process(target=Worker, args=(messages, profile, limit, delay)).start()
+
+    def start_profiles(self):
+        self.prf_window = Prf()
+
+        self.prf_window.setFixedSize(260, 600)
+        self.prf_window.setWindowTitle("Profiles")
+
+        self.prf_window.show()
+
+
+class Prf(QMainWindow):
+    def __init__(self):
+        super(Prf, self).__init__()
+
+        self.centralWidget = QWidget(self)
+
+        self.scrollArea = QScrollArea(self.centralWidget)
+        self.scrollArea.setGeometry(0, 0, 261, 601)
+        self.scrollArea.setWidgetResizable(True)
+
+        self.profiles = DolphinAPI().get_profiles()
+
+        profile_names = list(self.profiles.keys())
+
+        placeholders = {
+            "name": 20,
+            "checkBox": 34
+        }
+
+        self.label = QLabel(self.scrollArea)
+
+        font = QtGui.QFont()
+        font.setPointSize(16)
+
+        with open('../data/checked_profiles.txt') as f:
+            checked = [line.strip() for line in f.readlines()]
+        for name in profile_names:
+
+            label_name = QLabel(self.label)
+            label_name.setGeometry(20, placeholders["name"], 181, 41)
+            label_name.setText(name)
+            label_name.setFont(font)
+
+            check_box = QCheckBox(self.label)
+            check_box.setGeometry(210, placeholders["checkBox"], 20, 20)
+            check_box.stateChanged.connect(lambda state, check=check_box, name=name: self.checkbox_state(check, name))
+
+            if self.profiles[name] in checked:
+                check_box.setCheckState(QtCore.Qt.CheckState.Checked)
+
+            for k in placeholders.keys():
+                placeholders[k] += 50
+
+        self.label.setText("\n\n\n\n" * len(profile_names))
+
+        self.scrollArea.setWidget(self.label)
+
+        self.setCentralWidget(self.centralWidget)
+
+    def checkbox_state(self, check_box: QCheckBox, name: str):
+        try:
+            with open('../data/checked_profiles.txt') as f:
+                checked = [line.strip() for line in f.readlines()]
+
+            if check_box.isChecked():
+                if self.profiles[name] not in checked:
+                    checked.append(self.profiles[name])
+            else:
+                if self.profiles[name] in checked:
+                    checked.remove(self.profiles[name])
+
+            with open('../data/checked_profiles.txt', 'w', encoding='utf-8') as f:
+                for line in checked:
+                    f.write(line + '\n')
+        except:
+            print(traceback.format_exc())
 
 
 class Worker:
-    def __init__(self):
+    def __init__(self, messages: list, profile_id: str, limit: int, delay: float):
         Logging().debug('Worker started')
 
-        self.username = 'TomLoton'
-        self.profile_id = "134443580"
-        self.messages = ['213', '321', '000']
+        self.profile_id = profile_id
+        self.messages = messages
+
+        self.delay = delay
+
+        self.limit = limit
+        self.current_messages_value = 0
 
         self.start_browser()
+
+        while True:
+
+            try:
+                with open('../data/data.json') as json_file:
+                    usernames = json.load(json_file)["data"]
+
+                break
+            except:
+                pass
+
+        for username in usernames:
+
+            if self.current_messages_value == self.limit:
+                Logging().info('Limit reached')
+
+                break
+            else:
+                self.current_messages_value += 1
+
+            self.username = username
+
+            self.create_chat()
+
+            time.sleep(self.delay)
 
     def start_browser(self):
         options = webdriver.ChromeOptions()
@@ -53,10 +228,12 @@ class Worker:
 
                 time.sleep(3)
 
+                Logging().info('Create chat button clicked')
+
                 self.input_username()
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
     def input_username(self):
         now = time.time()
@@ -73,10 +250,12 @@ class Worker:
 
                 time.sleep(3)
 
+                Logging().info('Username inserted')
+
                 self.click_user()
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
     def click_user(self):
         now = time.time()
@@ -92,10 +271,12 @@ class Worker:
 
                 time.sleep(5)
 
+                Logging().info('User clicked')
+
                 self.click_start()
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
     def click_start(self):
         now = time.time()
@@ -110,9 +291,13 @@ class Worker:
                 start_btn.click()
 
                 time.sleep(3)
+
+                Logging().info('Chat started')
+
+                self.set_message()
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
     def set_message(self):
         message = random.choice(self.messages)
@@ -134,10 +319,12 @@ class Worker:
 
                 time.sleep(1)
 
-                return self.send_message()
+                Logging().info('Message inserted')
+
+                self.send_message()
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
     def send_message(self):
         now = time.time()
@@ -147,14 +334,35 @@ class Worker:
 
             try:
                 button = self.driver.execute_script("""
-                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
                 """)
                 button.click()
 
-                return
+                Logging().info('Message sent')
+
+                while True:
+
+                    try:
+                        with open('../data/sender.json', 'r') as json_file:
+                            data = json.load(json_file)
+                            data["messages_sent"] += data["messages_sent"]
+
+                        break
+                    except:
+                        pass
+
+                while True:
+
+                    try:
+                        with open('../data/sender.json', 'w') as json_file:
+                            json.dump(data, json_file, indent=4)
+
+                        break
+                    except:
+                        pass
             except:
                 if time.time() - now >= 30:
-                    return
+                    return Logging().debug(str(traceback.format_exc()))
 
 
 class Logging:
@@ -228,4 +436,8 @@ if __name__ == "__main__":
     with open('log.txt', 'w+') as f:
         f.write('')
 
-    Worker()
+    app = QApplication([])
+    win = MainWindow()
+    win.show()
+    app.exec_()
+
