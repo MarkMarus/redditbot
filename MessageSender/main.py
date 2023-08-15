@@ -1,7 +1,8 @@
 import time
 import json
+import random
 import threading
-from datetime import datetime, timedelta
+from datetime import datetime
 
 import requests
 
@@ -19,6 +20,7 @@ class Worker:
 
         self.username = 'TomLoton'
         self.profile_id = "134443580"
+        self.messages = ['213', '321', '000']
 
         self.start_browser()
 
@@ -49,7 +51,7 @@ class Worker:
                 """)
                 create_button.click()
 
-                time.sleep(5)
+                time.sleep(3)
 
                 self.input_username()
             except:
@@ -69,7 +71,7 @@ class Worker:
                 input_field.click()
                 input_field.send_keys(self.username)
 
-                time.sleep(5)
+                time.sleep(3)
 
                 self.click_user()
             except:
@@ -107,7 +109,49 @@ class Worker:
                 """)
                 start_btn.click()
 
-                time.sleep(5)
+                time.sleep(3)
+            except:
+                if time.time() - now >= 30:
+                    return
+
+    def set_message(self):
+        message = random.choice(self.messages)
+
+        now = time.time()
+
+        textarea = None
+        while textarea is None:
+
+            try:
+                textarea = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
+                """)
+                self.driver.execute_script("""
+                    arguments[0].value = arguments[1];
+                """, textarea, message)
+                textarea.click()
+                textarea.send_keys(' ')
+
+                time.sleep(1)
+
+                return self.send_message()
+            except:
+                if time.time() - now >= 30:
+                    return
+
+    def send_message(self):
+        now = time.time()
+
+        button = None
+        while button is None:
+
+            try:
+                button = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
+                """)
+                button.click()
+
+                return
             except:
                 if time.time() - now >= 30:
                     return
