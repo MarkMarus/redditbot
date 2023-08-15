@@ -1,0 +1,151 @@
+[2023-08-15 15:32:56.081597] DEBUG: Interface is loaded
+[2023-08-15 15:33:30.141118] DEBUG: Worker started
+[2023-08-15 15:33:43.245241] DEBUG: Browser started
+[2023-08-15 15:33:51.343883] INFO: Create chat button clicked
+[2023-08-15 15:33:54.442461] INFO: Username inserted
+[2023-08-15 15:33:59.487548] INFO: User clicked
+[2023-08-15 15:34:02.552255] INFO: Chat started
+[2023-08-15 15:34:03.637491] INFO: Message inserted
+[2023-08-15 15:34:03.690505] INFO: Message sent
+[2023-08-15 15:34:14.506608] INFO: Create chat button clicked
+[2023-08-15 15:34:17.597842] INFO: Username inserted
+[2023-08-15 15:34:22.644990] INFO: User clicked
+[2023-08-15 15:34:25.713689] INFO: Chat started
+[2023-08-15 15:34:26.799225] INFO: Message inserted
+[2023-08-15 15:34:26.842234] INFO: Message sent
+[2023-08-15 15:34:38.178666] INFO: Create chat button clicked
+[2023-08-15 15:34:41.290242] INFO: Username inserted
+[2023-08-15 15:34:46.340980] INFO: User clicked
+[2023-08-15 15:34:49.436784] INFO: Chat started
+[2023-08-15 15:34:50.520022] INFO: Message inserted
+[2023-08-15 15:34:50.564035] INFO: Message sent
+[2023-08-15 15:35:01.096860] INFO: Create chat button clicked
+[2023-08-15 15:35:04.223522] INFO: Username inserted
+[2023-08-15 15:35:09.274527] INFO: User clicked
+[2023-08-15 15:35:12.364858] INFO: Chat started
+[2023-08-15 15:35:13.452109] INFO: Message inserted
+[2023-08-15 15:35:13.496120] INFO: Message sent
+[2023-08-15 15:35:23.324783] INFO: Create chat button clicked
+[2023-08-15 15:35:26.423659] INFO: Username inserted
+[2023-08-15 15:35:31.470361] INFO: User clicked
+[2023-08-15 15:35:34.554318] INFO: Chat started
+[2023-08-15 15:35:35.637352] INFO: Message inserted
+[2023-08-15 15:35:35.682363] INFO: Message sent
+[2023-08-15 15:35:47.100767] INFO: Create chat button clicked
+[2023-08-15 15:35:50.202129] INFO: Username inserted
+[2023-08-15 15:35:55.251623] INFO: User clicked
+[2023-08-15 15:35:58.338688] INFO: Chat started
+[2023-08-15 15:35:59.423926] INFO: Message inserted
+[2023-08-15 15:35:59.468936] INFO: Message sent
+[2023-08-15 15:36:09.529692] INFO: Create chat button clicked
+[2023-08-15 15:36:12.646073] INFO: Username inserted
+[2023-08-15 15:36:17.688017] INFO: User clicked
+[2023-08-15 15:36:20.766718] INFO: Chat started
+[2023-08-15 15:36:21.854430] INFO: Message inserted
+[2023-08-15 15:36:21.897440] INFO: Message sent
+[2023-08-15 15:36:31.887294] INFO: Create chat button clicked
+[2023-08-15 15:36:34.973435] INFO: Username inserted
+[2023-08-15 15:36:40.025219] INFO: User clicked
+[2023-08-15 15:36:43.107064] INFO: Chat started
+[2023-08-15 15:36:44.193524] INFO: Message inserted
+[2023-08-15 15:36:44.235535] INFO: Message sent
+[2023-08-15 15:36:54.261877] INFO: Create chat button clicked
+[2023-08-15 15:36:57.362582] INFO: Username inserted
+[2023-08-15 15:37:02.411274] INFO: User clicked
+[2023-08-15 15:37:05.491925] INFO: Chat started
+[2023-08-15 15:37:06.577165] INFO: Message inserted
+[2023-08-15 15:37:06.620175] INFO: Message sent
+[2023-08-15 15:37:16.643411] INFO: Create chat button clicked
+[2023-08-15 15:37:19.745295] INFO: Username inserted
+[2023-08-15 15:37:24.794916] INFO: User clicked
+[2023-08-15 15:37:27.876636] INFO: Chat started
+[2023-08-15 15:37:28.963874] INFO: Message inserted
+[2023-08-15 15:37:29.007886] INFO: Message sent
+[2023-08-15 15:37:39.269717] INFO: Create chat button clicked
+[2023-08-15 15:37:42.378429] INFO: Username inserted
+[2023-08-15 15:37:47.431578] INFO: User clicked
+[2023-08-15 15:37:50.525788] INFO: Chat started
+[2023-08-15 15:37:51.613026] INFO: Message inserted
+[2023-08-15 15:37:51.656037] INFO: Message sent
+[2023-08-15 15:38:02.883182] INFO: Create chat button clicked
+[2023-08-15 15:38:05.982338] INFO: Username inserted
+[2023-08-15 15:38:11.029621] INFO: User clicked
+[2023-08-15 15:38:14.111203] INFO: Chat started
+[2023-08-15 15:38:15.191943] INFO: Message inserted
+[2023-08-15 15:38:15.234954] INFO: Message sent
+[2023-08-15 15:38:25.332841] INFO: Create chat button clicked
+[2023-08-15 15:38:28.426931] INFO: Username inserted
+[2023-08-15 15:38:33.476809] INFO: User clicked
+[2023-08-15 15:38:36.562510] INFO: Chat started
+[2023-08-15 15:38:37.649758] INFO: Message inserted
+[2023-08-15 15:38:37.693279] INFO: Message sent
+[2023-08-15 15:38:48.273596] INFO: Create chat button clicked
+[2023-08-15 15:38:51.387759] INFO: Username inserted
+[2023-08-15 15:38:56.440593] INFO: User clicked
+[2023-08-15 15:38:59.519956] INFO: Chat started
+[2023-08-15 15:39:00.623218] INFO: Message inserted
+[2023-08-15 15:39:00.667221] INFO: Message sent
+[2023-08-15 15:39:10.869628] INFO: Create chat button clicked
+[2023-08-15 15:39:13.967263] INFO: Username inserted
+[2023-08-15 15:39:58.250776] DEBUG: Traceback (most recent call last):
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    raise err
+  File "D:\redditbot\venv\lib\site-packages\urllib3\util\connection.py", line 73, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 790, in urlopen
+    response = self._make_request(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 496, in _make_request
+    conn.request(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connection.py", line 395, in request
+    self.endheaders()
+  File "C:\Users\stormz\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1225, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\stormz\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 1004, in _send_output
+    self.send(msg)
+  File "C:\Users\stormz\AppData\Local\Programs\Python\Python38-32\lib\http\client.py", line 944, in send
+    self.connect()
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connection.py", line 243, in connect
+    self.sock = self._new_conn()
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connection.py", line 218, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x009E6370>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\redditbot\MessageSender\main.py", line 267, in click_user
+    user = self.driver.execute_script("""
+  File "D:\redditbot\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 405, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "D:\redditbot\venv\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 343, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "D:\redditbot\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 291, in execute
+    return self._request(command_info[0], url, body=data)
+  File "D:\redditbot\venv\lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 312, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "D:\redditbot\venv\lib\site-packages\urllib3\_request_methods.py", line 118, in request
+    return self.request_encode_body(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\_request_methods.py", line 217, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "D:\redditbot\venv\lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 874, in urlopen
+    return self.urlopen(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\connectionpool.py", line 844, in urlopen
+    retries = retries.increment(
+  File "D:\redditbot\venv\lib\site-packages\urllib3\util\retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=50088): Max retries exceeded with url: /session/6b1769ec3ae76ec0921e7ff83191bd8d/execute/sync (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x009E6370>: Failed to establish a new connection: [WinError 10061] Подключение не установлено, т.к. конечный компьютер отверг запрос на подключение'))
+
+[2023-08-15 15:40:01.265461] INFO: Limit reached

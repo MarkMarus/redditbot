@@ -122,14 +122,12 @@ class Worker:
                 """)
 
             for post in posts:
-
                 try:
                     href = self.driver.execute_script("return arguments[0].getElementsByTagName('a')[1].href;", post)
                     relative_time = self.driver.execute_script(
                         """return arguments[0].querySelector("[data-testid='post_timestamp']").textContent;""", post)
                 except:
                     continue
-
                 if "week" in relative_time:
                     weeks = int(relative_time.split()[0])
                     time_difference = timedelta(weeks=weeks)
@@ -161,7 +159,11 @@ class Worker:
                     continue
                 elif post_date < datetime.strptime(self.dates[-1], date_format):
                     return Logging().info(str(self.all_posts))
+            time.sleep(5)
+            new_posts = self.driver.execute_script("return document.getElementsByClassName('Post');")
 
+            if len(new_posts) == len(posts):
+                break
     def get_comments(self, link: str):
         has_more = True
 
@@ -169,9 +171,10 @@ class Worker:
 
         Logging().debug(f'Redirected to {link}')
 
-        while has_more:
+        last_last_height = 0
+        last_height = 0
 
-            last_height = 0
+        while has_more:
             counter = 0
             while True:
 
@@ -192,10 +195,13 @@ class Worker:
                         break
                     else:
                         counter += 1
-
                         time.sleep(2)
+                    if last_last_height == 6:
+                        has_more = False
+                    last_last_height += 1
                 else:
                     last_height = height
+                    last_last_height = 0
 
                     time.sleep(2)
 
