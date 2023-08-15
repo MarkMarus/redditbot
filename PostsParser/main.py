@@ -8,10 +8,7 @@ import requests
 
 from selenium import webdriver
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.support.wait import WebDriverWait
-# from selenium.webdriver.support import expected_conditions as EC
 
 from ui.parser import Ui_MainWindow
 from PyQt5.QtWidgets import QMainWindow, QApplication
@@ -91,7 +88,7 @@ class Worker:
         for post in self.all_posts:
             self.get_comments(link=post)
 
-        with open('data/data.json', 'w') as json_file:
+        with open('../data/data.json', 'w') as json_file:
             json.dump({"data": self.authors}, json_file)
 
         time.sleep(666)
@@ -102,7 +99,7 @@ class Worker:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DolphinAPI().start_profile(profile_id)}')
 
-        self.driver = webdriver.Chrome(service=Service('chromedriver.exe'), options=options)
+        self.driver = webdriver.Chrome(service=Service('../chromedriver.exe'), options=options)
         self.actions = ActionChains(self.driver)
 
         self.driver.maximize_window()
@@ -256,11 +253,11 @@ class Logging:
 
 class DolphinAPI:
     def __init__(self):
-        with open('data/token.txt') as f:
+        with open('../data/token.txt') as f:
             self.token = f.readline()
 
     def start_profile(self, profile_id: str):
-        with open('data/token.txt') as f:
+        with open('../data/token.txt') as f:
             token = f.readline()
 
         headers = {
@@ -284,7 +281,7 @@ class DolphinAPI:
         return port
 
     def stop_profile(self, profile_id: str):
-        with open('data/token.txt') as f:
+        with open('../data/token.txt') as f:
             token = f.readline()
 
         headers = {
@@ -299,7 +296,7 @@ class DolphinAPI:
             self.stop_profile(profile_id)
 
     def get_profiles(self) -> dict:
-        with open('data/token.txt') as f:
+        with open('../data/token.txt') as f:
             token = f.readline()
 
         headers = {
