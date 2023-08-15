@@ -1,4 +1,3 @@
-import re
 import time
 import json
 import threading
@@ -10,7 +9,7 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 
-from ui.parser import Ui_MainWindow
+from gui import Ui_MainWindow
 from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
@@ -257,11 +256,8 @@ class DolphinAPI:
             self.token = f.readline()
 
     def start_profile(self, profile_id: str):
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": f"Bearer {self.token}"
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/start?automation=1",
@@ -281,11 +277,8 @@ class DolphinAPI:
         return port
 
     def stop_profile(self, profile_id: str):
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": f"Bearer {self.token}"
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/stop", headers=headers)
@@ -296,11 +289,8 @@ class DolphinAPI:
             self.stop_profile(profile_id)
 
     def get_profiles(self) -> dict:
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": f"Bearer {self.token}"
         }
 
         profiles = requests.get('https://anty-api.com/browser_profiles', headers=headers).json()["data"]
