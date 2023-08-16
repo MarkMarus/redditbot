@@ -93,37 +93,6 @@
      </rect>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
-    <property name="geometry">
-     <rect>
-      <x>400</x>
-      <y>170</y>
-      <width>91</width>
-      <height>31</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>20</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Прокси</string>
-    </property>
-   </widget>
-   <widget class="QRadioButton" name="proxy1">
-    <property name="geometry">
-     <rect>
-      <x>384</x>
-      <y>220</y>
-      <width>141</width>
-      <height>20</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>1 аккаунт = 1 прокси</string>
-    </property>
-   </widget>
    <widget class="QPushButton" name="start">
     <property name="geometry">
      <rect>
@@ -141,7 +110,7 @@
     <property name="geometry">
      <rect>
       <x>400</x>
-      <y>260</y>
+      <y>170</y>
       <width>101</width>
       <height>31</height>
      </rect>
@@ -159,7 +128,7 @@
     <property name="geometry">
      <rect>
       <x>390</x>
-      <y>310</y>
+      <y>220</y>
       <width>131</width>
       <height>22</height>
      </rect>

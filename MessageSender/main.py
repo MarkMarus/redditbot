@@ -12,7 +12,8 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 
-from gui import Ui_MainWindow
+from gui import Ui_MainWindow as GuiWindow
+from error import Ui_MainWindow as ErrWindow
 
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QScrollArea, QLabel, QCheckBox
@@ -24,7 +25,7 @@ class MainWindow(QMainWindow):
 
         self.setFixedSize(630, 481)
 
-        self.ui = Ui_MainWindow()
+        self.ui = GuiWindow()
         self.ui.setupUi(self)
 
         threading.Thread(target=self.update_labels).start()
@@ -51,8 +52,10 @@ class MainWindow(QMainWindow):
             self.ui.messages_sent.setText(str(data["messages_sent"]))
             self.ui.accounts_used.setText(str(data["accounts_used"]))
 
+            time.sleep(0.1)
+
     def start_worker(self):
-        messages = self.ui.list_messages.toPlainText().split('\n')
+        messages = self.ui.list_messages.toPlainText().split('-')
         limit = int(self.ui.limit.text())
         delay = float(self.ui.delay.text().replace(',', '.'))
 
@@ -80,8 +83,13 @@ class MainWindow(QMainWindow):
             except:
                 pass
 
+        used_messages = []
+
         for profile in profiles:
-            multiprocessing.Process(target=Worker, args=(messages, profile, limit, delay)).start()
+            random_message = random.choice(messages)
+
+            if random_message not in used_messages:
+                multiprocessing.Process(target=Worker, args=(random_message, profile, limit, delay)).start()
 
     def start_profiles(self):
         self.prf_window = Prf()
@@ -118,6 +126,7 @@ class Prf(QMainWindow):
 
         with open('../data/checked_profiles.txt') as f:
             checked = [line.strip() for line in f.readlines()]
+
         for name in profile_names:
 
             label_name = QLabel(self.label)
@@ -160,17 +169,29 @@ class Prf(QMainWindow):
             print(traceback.format_exc())
 
 
+class Error(QMainWindow):
+    def __init__(self):
+        super(Error, self).__init__()
+
+        self.ui = ErrWindow()
+        self.ui.setupUi(self)
+
+        self.setFixedSize(403, 200)
+
+
 class Worker:
-    def __init__(self, messages: list, profile_id: str, limit: int, delay: float):
+    def __init__(self, message: str, profile_id: str, limit: int, delay: float):
         Logging().debug('Worker started')
 
         self.profile_id = profile_id
-        self.messages = messages
+        self.message = message
 
         self.delay = delay
 
         self.limit = limit
         self.current_messages_value = 0
+
+        self.error = False
 
         self.start_browser()
 
@@ -186,7 +207,16 @@ class Worker:
 
         for username in usernames:
 
+            if self.error:
+                self.add_used_account()
+
+                threading.Thread(target=self.show_error_window).start()
+
+                break
+
             if self.current_messages_value == self.limit:
+                self.add_used_account()
+
                 Logging().info('Limit reached')
 
                 break
@@ -198,6 +228,10 @@ class Worker:
             self.create_chat()
 
             time.sleep(self.delay)
+
+    def show_error_window(self):
+        self.err_window = Error()
+        self.err_window.show()
 
     def start_browser(self):
         options = webdriver.ChromeOptions()
@@ -211,6 +245,50 @@ class Worker:
         self.driver.maximize_window()
 
         Logging().debug('Browser started')
+
+    def add_used_account(self):
+        while True:
+
+            try:
+                with open('../data/sender.json', 'r') as json_file:
+                    data = json.load(json_file)
+                    data["accounts_used"] += 1
+
+                break
+            except:
+                pass
+
+        while True:
+
+            try:
+                with open('../data/sender.json', 'w') as json_file:
+                    json.dump(data, json_file, indent=4)
+
+                break
+            except:
+                pass
+
+    def add_message(self):
+        while True:
+
+            try:
+                with open('../data/sender.json', 'r') as json_file:
+                    data = json.load(json_file)
+                    data["messages_sent"] += data["messages_sent"]
+
+                break
+            except:
+                pass
+
+        while True:
+
+            try:
+                with open('../data/sender.json', 'w') as json_file:
+                    json.dump(data, json_file, indent=4)
+
+                break
+            except:
+                pass
 
     def create_chat(self):
         self.driver.get("https://chat.reddit.com")
@@ -300,8 +378,6 @@ class Worker:
                     return Logging().debug(str(traceback.format_exc()))
 
     def set_message(self):
-        message = random.choice(self.messages)
-
         now = time.time()
 
         textarea = None
@@ -311,11 +387,8 @@ class Worker:
                 textarea = self.driver.execute_script("""
                     return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
                 """)
-                self.driver.execute_script("""
-                    arguments[0].value = arguments[1];
-                """, textarea, message)
                 textarea.click()
-                textarea.send_keys(' ')
+                textarea.send_keys(self.message)
 
                 time.sleep(1)
 
@@ -340,38 +413,67 @@ class Worker:
 
                 Logging().info('Message sent')
 
-                while True:
-
-                    try:
-                        with open('../data/sender.json', 'r') as json_file:
-                            data = json.load(json_file)
-                            data["messages_sent"] += data["messages_sent"]
-
-                        break
-                    except:
-                        pass
-
-                while True:
-
-                    try:
-                        with open('../data/sender.json', 'w') as json_file:
-                            json.dump(data, json_file, indent=4)
-
-                        break
-                    except:
-                        pass
+                self.check_limit_error()
             except:
                 if time.time() - now >= 30:
                     return Logging().debug(str(traceback.format_exc()))
 
+    def check_limit_error(self):
+        now = time.time()
+
+        limit_error = None
+        while limit_error is None:
+
+            try:
+                limit_error = self.driver.execute_script("""
+                    return document.getElementsByTagName('faceplate-toast');
+                """)
+
+                Logging().info('Limit error')
+
+                self.error = True
+
+                return
+            except:
+                if time.time() - now >= 5:
+                    Logging().info('No limit error')
+
+                    break
+
+        self.check_send_error()
+
+    def check_send_error(self):
+        now = time.time()
+
+        send_error = None
+        while send_error is None:
+
+            try:
+                send_error = self.driver.execute_script("""
+                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager').querySelector('rs-room').shadowRoot.querySelector('main').querySelector('rs-timeline').shadowRoot.querySelector('rs-virtual-scroll-dynamic').shadowRoot.querySelector('rs-timeline-event').getElementsByClassName('error')[0];
+                """)
+
+                Logging().info('Send error')
+
+                self.error = True
+
+                return
+            except:
+                if time.time() - now >= 5:
+                    Logging().info('No send error')
+
+                    break
+
+        self.add_message()
+
 
 class Logging:
     def info(self, message: str):
-        with open('log.txt', 'a') as f:
+        with open('log.txt', 'a', encoding='utf-8') as f:
             f.write(f'[{datetime.now()}] INFO: {message}\n')
 
     def debug(self, message: str):
-        with open('log.txt', 'a') as f:
+        with open('log.txt', 'a', encoding='utf-8') as f:
             f.write(f'[{datetime.now()}] DEBUG: {message}\n')
 
 
@@ -436,8 +538,14 @@ if __name__ == "__main__":
     with open('log.txt', 'w+') as f:
         f.write('')
 
+    with open('../data/sender.json', 'w') as json_file:
+        json.dump({
+            "accounts_in_work": 0,
+            "messages_sent": 0,
+            "accounts_used": 0
+        }, json_file, indent=4)
+
     app = QApplication([])
     win = MainWindow()
     win.show()
     app.exec_()
-

@@ -248,11 +248,11 @@ class Worker:
 
 class Logging:
     def info(self, message: str):
-        with open('log.txt', 'a') as f:
+        with open('log.txt', 'a', encoding='utf-8') as f:
             f.write(f'[{datetime.now()}] INFO: {message}\n')
 
     def debug(self, message: str):
-        with open('log.txt', 'a') as f:
+        with open('log.txt', 'a', encoding='utf-8') as f:
             f.write(f'[{datetime.now()}] DEBUG: {message}\n')
 
 
