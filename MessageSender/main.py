@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
             time.sleep(0.1)
 
     def start_worker(self):
-        messages = self.ui.list_messages.toPlainText().split('-\n')
+        messages = self.ui.list_messages.toPlainText().split('-')
         limit = int(self.ui.limit.text())
         delay = float(self.ui.delay.text().replace(',', '.'))
 
