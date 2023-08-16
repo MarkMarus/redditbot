@@ -442,7 +442,7 @@ class Worker:
 
             try:
                 limit_error = self.driver.execute_script("""
-                    return document.getElementsByTagName('faceplate-toast');
+                    return document.getElementsByTagName('faceplate-toast')[0];
                 """)
 
                 Logging().info('Limit error')
