@@ -8,13 +8,14 @@ from datetime import datetime
 
 import requests
 
+import subprocess
+
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.keys import Keys
 
 from gui import Ui_MainWindow as GuiWindow
-from error import Ui_MainWindow as ErrWindow
 
 from PyQt5 import QtGui, QtCore
 from PyQt5.QtWidgets import QMainWindow, QApplication, QWidget, QScrollArea, QLabel, QCheckBox
@@ -170,16 +171,6 @@ class Prf(QMainWindow):
             print(traceback.format_exc())
 
 
-class Error(QMainWindow):
-    def __init__(self):
-        super(Error, self).__init__()
-
-        self.ui = ErrWindow()
-        self.ui.setupUi(self)
-
-        self.setFixedSize(403, 200)
-
-
 class Worker:
     def __init__(self, message: str, profile_id: str, limit: int, delay: float):
         Logging().debug('Worker started')
@@ -231,8 +222,7 @@ class Worker:
             time.sleep(self.delay)
 
     def show_error_window(self):
-        self.err_window = Error()
-        self.err_window.show()
+        subprocess.call('python win.py', shell=True)
 
     def start_browser(self):
         options = webdriver.ChromeOptions()
@@ -458,13 +448,15 @@ class Worker:
 
                 if not error:
                     if time.time() - now >= 5:
-                        Logging().info('No limit error')
+                        Logging().info('No error')
+
+                        self.add_message()
 
                         break
 
                     continue
 
-                Logging().info('Limit error')
+                Logging().info('Error')
 
                 self.error = True
 
