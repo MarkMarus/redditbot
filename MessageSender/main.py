@@ -457,6 +457,11 @@ class Worker:
                 """)
 
                 if not error:
+                    if time.time() - now >= 5:
+                        Logging().info('No limit error')
+
+                        break
+
                     continue
 
                 Logging().info('Limit error')
