@@ -1,6 +1,6 @@
 from error import Ui_MainWindow as ErrWindow
 
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtWidgets import QMainWindow, QApplication
 
 
 class Error(QMainWindow):
@@ -11,3 +11,10 @@ class Error(QMainWindow):
         self.ui.setupUi(self)
 
         self.setFixedSize(403, 200)
+
+
+if __name__ == "__main__":
+    app = QApplication([])
+    win = Error()
+    win.show()
+    app.exec_()

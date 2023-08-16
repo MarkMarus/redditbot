@@ -202,7 +202,7 @@ class Worker:
             if self.error:
                 self.add_used_account()
 
-                threading.Thread(target=self.show_error_window).start()
+                self.show_error_window()
 
                 break
 
@@ -265,7 +265,7 @@ class Worker:
             try:
                 with open('../data/sender.json', 'r') as json_file:
                     data = json.load(json_file)
-                    data["messages_sent"] += data["messages_sent"]
+                    data["messages_sent"] += 1
 
                 break
             except:
