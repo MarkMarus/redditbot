@@ -226,7 +226,7 @@ class Worker:
             time.sleep(self.delay)
 
     def show_error_window(self):
-        subprocess.call('python win.py', shell=True)
+        subprocess.call('python3 win.py', shell=True)
 
     def start_browser(self):
         options = webdriver.ChromeOptions()
