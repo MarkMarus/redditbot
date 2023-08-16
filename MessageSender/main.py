@@ -386,13 +386,12 @@ class Worker:
 
             try:
                 textarea = self.driver.execute_script("""
-                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
-                """)
-
-                if not textarea:
-                    textarea = self.driver.execute_script("""
+                    try {
+                        return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
+                    } catch (error) {
                         return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
-                    """)
+                    }
+                """)
 
                 textarea.click()
 
@@ -419,13 +418,12 @@ class Worker:
 
             try:
                 button = self.driver.execute_script("""
-                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
-                """)
-
-                if not button:
-                    button = self.driver.execute_script("""
+                    try {
+                        return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
+                    } catch (error) {
                         return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
-                    """)
+                    }
+                """)
 
                 button.click()
 
