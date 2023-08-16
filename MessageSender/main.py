@@ -244,6 +244,8 @@ class Worker:
                 with open('../data/sender.json', 'r') as json_file:
                     data = json.load(json_file)
                     data["accounts_used"] += 1
+                    data["messages_sent"] = 0
+                    data["accounts_used"] = 0
 
                 break
             except:
