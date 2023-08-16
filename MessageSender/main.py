@@ -56,7 +56,7 @@ class MainWindow(QMainWindow):
             time.sleep(0.1)
 
     def start_worker(self):
-        messages = self.ui.list_messages.toPlainText().split('\n-\n')
+        messages = self.ui.list_messages.toPlainText().split('-\n')
         limit = int(self.ui.limit.text())
         delay = float(self.ui.delay.text().replace(',', '.'))
 
@@ -388,6 +388,12 @@ class Worker:
                 textarea = self.driver.execute_script("""
                     return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
                 """)
+
+                if not textarea:
+                    textarea = self.driver.execute_script("""
+                        return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
+                    """)
+
                 textarea.click()
 
                 for message in self.message:
@@ -415,6 +421,12 @@ class Worker:
                 button = self.driver.execute_script("""
                     return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
                 """)
+
+                if not button:
+                    button = self.driver.execute_script("""
+                        return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelectorAll('button')[1];
+                    """)
+
                 button.click()
 
                 Logging().info('Message sent')
