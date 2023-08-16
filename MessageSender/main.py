@@ -437,13 +437,27 @@ class Worker:
     def check_limit_error(self):
         now = time.time()
 
-        limit_error = None
-        while limit_error is None:
+        error = None
+        while error is None:
 
             try:
-                limit_error = self.driver.execute_script("""
-                    return document.getElementsByTagName('faceplate-toast')[0];
+                error = self.driver.execute_script("""
+                    try {
+                        let limit_error = document.getElementsByTagName('faceplate-toast')[0];
+                        if (limit_error) {
+                            return limit_error;
+                        }
+                    } catch (error) {
+                        let tags = document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-timeline').shadowRoot.querySelector('rs-virtual-scroll-dynamic').shadowRoot.querySelectorAll('rs-timeline-event');
+                        let last_message = tags[tags.length - 1].shadowRoot.querySelector('[class="error"]');
+                        if (last_message) {
+                            return last_message;
+                        }
+                    }
                 """)
+
+                if not error:
+                    continue
 
                 Logging().info('Limit error')
 
@@ -455,32 +469,6 @@ class Worker:
                     Logging().info('No limit error')
 
                     break
-
-        self.check_send_error()
-
-    def check_send_error(self):
-        now = time.time()
-
-        send_error = None
-        while send_error is None:
-
-            try:
-                send_error = self.driver.execute_script("""
-                    return document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager').querySelector('rs-room').shadowRoot.querySelector('main').querySelector('rs-timeline').shadowRoot.querySelector('rs-virtual-scroll-dynamic').shadowRoot.querySelector('rs-timeline-event').getElementsByClassName('error')[0];
-                """)
-
-                Logging().info('Send error')
-
-                self.error = True
-
-                return
-            except:
-                if time.time() - now >= 5:
-                    Logging().info('No send error')
-
-                    break
-
-        self.add_message()
 
 
 class Logging:
