@@ -11,6 +11,7 @@ import requests
 from selenium import webdriver
 from selenium.webdriver import ActionChains
 from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.keys import Keys
 
 from gui import Ui_MainWindow as GuiWindow
 from error import Ui_MainWindow as ErrWindow
@@ -55,7 +56,7 @@ class MainWindow(QMainWindow):
             time.sleep(0.1)
 
     def start_worker(self):
-        messages = self.ui.list_messages.toPlainText().split('-')
+        messages = self.ui.list_messages.toPlainText().split('\n-\n')
         limit = int(self.ui.limit.text())
         delay = float(self.ui.delay.text().replace(',', '.'))
 
@@ -184,7 +185,7 @@ class Worker:
         Logging().debug('Worker started')
 
         self.profile_id = profile_id
-        self.message = message
+        self.message = [msg for msg in message.split('\n') if msg]
 
         self.delay = delay
 
@@ -388,7 +389,12 @@ class Worker:
                     return document.querySelector('rs-app').shadowRoot.querySelector('rs-direct-chat').shadowRoot.querySelector('rs-message-composer').shadowRoot.querySelector('textarea');
                 """)
                 textarea.click()
-                textarea.send_keys(self.message)
+
+                for message in self.message:
+                    textarea.send_keys(message)
+                    time.sleep(0.2)
+                    textarea.send_keys(Keys.SHIFT + Keys.ENTER)
+                    time.sleep(0.5)
 
                 time.sleep(1)
 
