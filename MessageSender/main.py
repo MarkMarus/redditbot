@@ -436,10 +436,13 @@ class Worker:
                         let limit_error = document.getElementsByTagName('faceplate-toast')[0];
                         if (limit_error) {
                             return limit_error;
-                        }
+                        } else {
+                            throw new Error('limit_error is null');
+                        };
                     } catch (error) {
                         let tags = document.querySelector('rs-app').shadowRoot.querySelector('rs-room-overlay-manager > rs-room').shadowRoot.querySelector('rs-timeline').shadowRoot.querySelector('rs-virtual-scroll-dynamic').shadowRoot.querySelectorAll('rs-timeline-event');
                         let last_message = tags[tags.length - 1].shadowRoot.querySelector('[class="error"]');
+                        console.log(last_message);
                         if (last_message) {
                             return last_message;
                         }
