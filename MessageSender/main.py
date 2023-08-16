@@ -70,6 +70,8 @@ class MainWindow(QMainWindow):
                 with open('../data/sender.json', 'r') as json_file:
                     data = json.load(json_file)
                     data["accounts_in_work"] = len(profiles)
+                    data["messages_sent"] = 0
+                    data["accounts_used"] = 0
 
                 break
             except:
@@ -91,6 +93,8 @@ class MainWindow(QMainWindow):
             random_message = random.choice(messages)
 
             if random_message not in used_messages:
+                used_messages.append(random_message)
+                
                 multiprocessing.Process(target=Worker, args=(random_message, profile, limit, delay)).start()
 
     def start_profiles(self):
@@ -244,9 +248,7 @@ class Worker:
                 with open('../data/sender.json', 'r') as json_file:
                     data = json.load(json_file)
                     data["accounts_used"] += 1
-                    data["messages_sent"] = 0
-                    data["accounts_used"] = 0
-
+                    
                 break
             except:
                 pass
