@@ -263,7 +263,7 @@ class DolphinAPI:
 
     def start_profile(self, profile_id: str):
         headers = {
-            "Authorization": f"Bearer {self.token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/start?automation=1",
@@ -284,7 +284,7 @@ class DolphinAPI:
 
     def stop_profile(self, profile_id: str):
         headers = {
-            "Authorization": f"Bearer {self.token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/stop", headers=headers)
@@ -296,7 +296,7 @@ class DolphinAPI:
 
     def get_profiles(self) -> dict:
         headers = {
-            "Authorization": f"Bearer {self.token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         profiles = requests.get('https://anty-api.com/browser_profiles', headers=headers).json()["data"]
