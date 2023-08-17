@@ -491,11 +491,8 @@ class DolphinAPI:
             self.token = f.readline()
 
     def start_profile(self, profile_id: str):
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/start?automation=1",
@@ -515,11 +512,8 @@ class DolphinAPI:
         return port
 
     def stop_profile(self, profile_id: str):
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/stop", headers=headers)
@@ -530,11 +524,8 @@ class DolphinAPI:
             self.stop_profile(profile_id)
 
     def get_profiles(self) -> dict:
-        with open('../data/token.txt') as f:
-            token = f.readline()
-
         headers = {
-            "Authorization": f"Bearer {token}"
+            "Authorization": b"Bearer " + self.token.encode()
         }
 
         profiles = requests.get('https://anty-api.com/browser_profiles', headers=headers).json()["data"]
