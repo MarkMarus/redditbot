@@ -225,6 +225,10 @@ class Worker:
 
             time.sleep(self.delay)
 
+        Logging().info('Complete')
+
+        DolphinAPI().stop_profile(self.profile_id)
+
     def show_error_window(self):
         subprocess.call('python3 win.py', shell=True)
 
@@ -234,7 +238,7 @@ class Worker:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DolphinAPI().start_profile(self.profile_id)}')
 
-        self.driver = webdriver.Chrome(service=Service('../chromedriver.exe'), options=options)
+        self.driver = webdriver.Chrome(service=Service('../chromedriver'), options=options)
         self.actions = ActionChains(self.driver)
 
         self.driver.maximize_window()

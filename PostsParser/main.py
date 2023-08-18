@@ -1,6 +1,6 @@
 import time
 import json
-import threading
+import multiprocessing
 from datetime import datetime, timedelta
 
 import requests
@@ -49,7 +49,7 @@ class MainWindow(QMainWindow):
 
         Logging().info(str(data))
 
-        threading.Thread(target=Worker, kwargs=data).start()
+        multiprocessing.Process(target=Worker, kwargs=data).start()
 
 
 class Worker:
@@ -61,7 +61,7 @@ class Worker:
         self.authors = []
 
         if "second_date" in kwargs:
-            date_format = "%d.%m.%Y"
+            date_format = "%m/%d/%y"
 
             start_date = datetime.strptime(kwargs["first_date"], date_format)
             end_date = datetime.strptime(kwargs["second_date"], date_format)
@@ -87,10 +87,20 @@ class Worker:
         for post in self.all_posts:
             self.get_comments(link=post)
 
-        with open('../data/data.json', 'w') as json_file:
-            json.dump({"data": self.authors}, json_file)
+            with open('../data/data.json', 'r') as json_file:
+                json_data = json.load(json_file)["data"]
 
-        time.sleep(666)
+            json_data.extend(self.authors)
+            json_data = list(set(json_data))
+
+            with open('../data/data.json', 'w') as json_file:
+                json.dump({"data": json_data}, json_file)
+
+            self.authors = []
+
+        Logging().info('Complete')
+
+        DolphinAPI().stop_profile(kwargs["profile_id"])
 
     def start_browser(self, profile_id: str):
         options = webdriver.ChromeOptions()
@@ -98,7 +108,7 @@ class Worker:
         options.add_argument('--disable-blink-features=AutomationControlled')
         options.add_experimental_option('debuggerAddress', f'127.0.0.1:{DolphinAPI().start_profile(profile_id)}')
 
-        self.driver = webdriver.Chrome(service=Service('../chromedriver.exe'), options=options)
+        self.driver = webdriver.Chrome(service=Service('../chromedriver'), options=options)
         self.actions = ActionChains(self.driver)
 
         self.driver.maximize_window()
@@ -122,12 +132,24 @@ class Worker:
                 """)
 
             for post in posts:
+
                 try:
-                    href = self.driver.execute_script("return arguments[0].getElementsByTagName('a')[1].href;", post)
+                    href = self.driver.execute_script("""
+                        let aTags = arguments[0].getElementsByTagName('a');
+                        
+                        for (let aTag of aTags) {
+                            let link = aTag.href;
+                            if (link.includes('comments')) {
+                                return link;
+                            }
+                        }
+                    """, post)
+
                     relative_time = self.driver.execute_script(
                         """return arguments[0].querySelector("[data-testid='post_timestamp']").textContent;""", post)
                 except:
                     continue
+
                 if "week" in relative_time:
                     weeks = int(relative_time.split()[0])
                     time_difference = timedelta(weeks=weeks)
@@ -151,9 +173,12 @@ class Worker:
                 Logging().info(f"Post time - {post_date}")
 
                 if href not in self.all_posts:
-                    self.all_posts.append(href)
+                    try:
+                        self.actions.scroll_to_element(post).perform()
+                    except:
+                        continue
 
-                    self.actions.scroll_to_element(post).perform()
+                    self.all_posts.append(href)
 
                 if post_date > datetime.strptime(self.dates[0], date_format):
                     continue
@@ -164,6 +189,7 @@ class Worker:
 
             if len(new_posts) == len(posts):
                 break
+
     def get_comments(self, link: str):
         has_more = True
 
@@ -307,6 +333,9 @@ class DolphinAPI:
 if __name__ == "__main__":
     with open('log.txt', 'w+') as f:
         f.write('')
+
+    with open('../data/data.json', 'w') as json_file:
+        json.dump({"data": []}, json_file)
 
     app = QApplication([])
     win = MainWindow()
