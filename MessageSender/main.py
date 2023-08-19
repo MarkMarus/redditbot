@@ -32,8 +32,9 @@ class MainWindow(QMainWindow):
 
         threading.Thread(target=self.update_labels).start()
 
-        self.ui.start_btn.clicked.connect(self.start_worker)
+        self.ui.start_btn.clicked.connect(lambda: threading.Thread(target=self.start_worker).start())
         self.ui.profiles_btn.clicked.connect(self.start_profiles)
+        self.ui.clear_btn.clicked.connect(self.clear_users)
 
         Logging().debug('Interface is loaded')
 
@@ -95,7 +96,9 @@ class MainWindow(QMainWindow):
             if random_message not in used_messages:
                 used_messages.append(random_message)
                 
-                multiprocessing.Process(target=Worker, args=(random_message, profile, limit, delay)).start()
+                proc = multiprocessing.Process(target=Worker, args=(random_message, profile, limit, delay))
+                proc.start()
+                proc.join()
 
     def start_profiles(self):
         self.prf_window = Prf()
@@ -104,6 +107,10 @@ class MainWindow(QMainWindow):
         self.prf_window.setWindowTitle("Profiles")
 
         self.prf_window.show()
+
+    def clear_users(self):
+        with open('users.txt', 'w+') as f:
+            f.write('')
 
 
 class Prf(QMainWindow):
@@ -203,6 +210,10 @@ class Worker:
 
         for username in usernames:
 
+            is_in_list = self.get_user()
+            if is_in_list:
+                continue
+
             if self.error:
                 self.add_used_account()
 
@@ -223,7 +234,7 @@ class Worker:
 
             self.create_chat()
 
-            time.sleep(self.delay)
+            time.sleep(random.uniform(5, self.delay))
 
         Logging().info('Complete')
 
@@ -288,6 +299,49 @@ class Worker:
                 break
             except:
                 pass
+
+    def add_user(self):
+        while True:
+
+            try:
+                with open('users.txt', 'r') as f:
+                    users = [line.strip() for line in f.readlines() if line.strip()]
+
+                break
+            except:
+                pass
+
+        if self.username not in users:
+            users.append(self.username)
+
+        while True:
+
+            try:
+                with open('users.txt', 'w') as f:
+                    for line in users:
+                        f.write(line + '\n')
+
+                break
+            except:
+                pass
+
+    def get_user(self) -> bool:
+        while True:
+
+            try:
+                with open('users.txt', 'r') as f:
+                    users = [line.strip() for line in f.readlines() if line.strip()]
+
+                break
+            except:
+                pass
+
+        if self.username not in users:
+            users.append(self.username)
+
+            return True
+        else:
+            return False
 
     def create_chat(self):
         self.driver.get("https://chat.reddit.com")
@@ -396,6 +450,7 @@ class Worker:
                 for message in self.message:
                     textarea.send_keys(message)
                     time.sleep(0.2)
+
                     textarea.send_keys(Keys.SHIFT + Keys.ENTER)
                     time.sleep(0.5)
 
@@ -441,9 +496,13 @@ class Worker:
             try:
                 error = self.driver.execute_script("""
                     try {
-                        let limit_error = document.getElementsByTagName('faceplate-toast')[0];
-                        if (limit_error) {
-                            return limit_error;
+                        let limit_errors = document.getElementsByTagName('faceplate-toast');
+                        if (limit_errors) {
+                            for (let limit_error of limit_errors) {
+                                if (!limit_error.textContent.includes('Unable to invite')) {
+                                    return limit_error;
+                                }
+                            }
                         } else {
                             throw new Error('limit_error is null');
                         };
@@ -462,6 +521,7 @@ class Worker:
                         Logging().info('No error')
 
                         self.add_message()
+                        self.add_user()
 
                         break
 
@@ -475,6 +535,9 @@ class Worker:
             except:
                 if time.time() - now >= 5:
                     Logging().info('No limit error')
+
+                    self.add_message()
+                    self.add_user()
 
                     break
 

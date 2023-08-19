@@ -125,7 +125,7 @@ p, li { white-space: pre-wrap; }
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>320</y>
+      <y>310</y>
       <width>121</width>
       <height>41</height>
      </rect>
@@ -134,17 +134,17 @@ p, li { white-space: pre-wrap; }
      <string>Профили</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="start_btn">
+   <widget class="QPushButton" name="clear_btn">
     <property name="geometry">
      <rect>
       <x>410</x>
-      <y>370</y>
+      <y>360</y>
       <width>121</width>
       <height>41</height>
      </rect>
     </property>
     <property name="text">
-     <string>Старт</string>
+     <string>Очистка</string>
     </property>
    </widget>
    <widget class="QLabel" name="accounts_in_work">
@@ -219,6 +219,19 @@ p, li { white-space: pre-wrap; }
       <width>71</width>
       <height>22</height>
      </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="start_btn">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>410</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Старт</string>
     </property>
    </widget>
   </widget>
