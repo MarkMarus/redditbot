@@ -27,6 +27,8 @@ class MainWindow(QMainWindow):
 
         self.setFixedSize(630, 481)
 
+        self.profiles = DolphinAPI().get_profiles()
+
         self.ui = GuiWindow()
         self.ui.setupUi(self)
 
@@ -90,15 +92,17 @@ class MainWindow(QMainWindow):
 
         used_messages = []
 
-        for profile in profiles:
-            random_message = random.choice(messages)
+        for profile_name, profile_id in self.profiles.items():
 
-            if random_message not in used_messages:
-                used_messages.append(random_message)
-                
-                proc = multiprocessing.Process(target=Worker, args=(random_message, profile, limit, delay))
-                proc.start()
-                proc.join()
+            if profile_id in profiles:
+                random_message = random.choice(messages)
+
+                if random_message not in used_messages:
+                    used_messages.append(random_message)
+
+                    proc = multiprocessing.Process(target=Worker, args=(random_message, profile_id, limit, delay, profile_name))
+                    proc.start()
+                    proc.join()
 
     def start_profiles(self):
         self.prf_window = Prf()
@@ -183,10 +187,12 @@ class Prf(QMainWindow):
 
 
 class Worker:
-    def __init__(self, message: str, profile_id: str, limit: int, delay: float):
-        Logging().debug('Worker started')
+    def __init__(self, message: str, profile_id: str, limit: int, delay: float, profile_name: str):
+        Logging().debug(f'[{profile_name}] Worker started')
 
         self.profile_id = profile_id
+        self.profile_name = profile_name
+
         self.message = [msg for msg in message.split('\n') if msg]
 
         self.delay = delay
@@ -210,6 +216,8 @@ class Worker:
 
         for username in usernames:
 
+            self.username = username
+
             is_in_list = self.get_user()
             if is_in_list:
                 continue
@@ -217,26 +225,24 @@ class Worker:
             if self.error:
                 self.add_used_account()
 
-                self.show_error_window()
+                threading.Thread(target=self.show_error_window).start()
 
                 break
 
             if self.current_messages_value == self.limit:
                 self.add_used_account()
 
-                Logging().info('Limit reached')
+                Logging().info(f'[{self.profile_name}] Limit reached')
 
                 break
             else:
                 self.current_messages_value += 1
 
-            self.username = username
-
             self.create_chat()
 
             time.sleep(random.uniform(5, self.delay))
 
-        Logging().info('Complete')
+        Logging().info(f'[{self.profile_name}] Complete')
 
         DolphinAPI().stop_profile(self.profile_id)
 
@@ -254,7 +260,7 @@ class Worker:
 
         self.driver.maximize_window()
 
-        Logging().debug('Browser started')
+        Logging().debug(f'[{self.profile_name}] Browser started')
 
     def add_used_account(self):
         while True:
@@ -339,9 +345,9 @@ class Worker:
         if self.username not in users:
             users.append(self.username)
 
-            return True
-        else:
             return False
+        else:
+            return True
 
     def create_chat(self):
         self.driver.get("https://chat.reddit.com")
@@ -359,7 +365,7 @@ class Worker:
 
                 time.sleep(3)
 
-                Logging().info('Create chat button clicked')
+                Logging().info(f'[{self.profile_name}] Create chat button clicked')
 
                 self.input_username()
             except:
@@ -381,7 +387,7 @@ class Worker:
 
                 time.sleep(3)
 
-                Logging().info('Username inserted')
+                Logging().info(f'[{self.profile_name}] Username inserted')
 
                 self.click_user()
             except:
@@ -402,7 +408,7 @@ class Worker:
 
                 time.sleep(5)
 
-                Logging().info('User clicked')
+                Logging().info(f'[{self.profile_name}] User clicked')
 
                 self.click_start()
             except:
@@ -423,7 +429,7 @@ class Worker:
 
                 time.sleep(3)
 
-                Logging().info('Chat started')
+                Logging().info(f'[{self.profile_name}] Chat started')
 
                 self.set_message()
             except:
@@ -456,7 +462,7 @@ class Worker:
 
                 time.sleep(1)
 
-                Logging().info('Message inserted')
+                Logging().info(f'[{self.profile_name}] Message inserted')
 
                 self.send_message()
             except:
@@ -480,7 +486,7 @@ class Worker:
 
                 button.click()
 
-                Logging().info('Message sent')
+                Logging().info(f'[{self.profile_name}] Message sent')
 
                 self.check_limit_error()
             except:
@@ -518,7 +524,7 @@ class Worker:
 
                 if not error:
                     if time.time() - now >= 5:
-                        Logging().info('No error')
+                        Logging().info(f'[{self.profile_name}] No error')
 
                         self.add_message()
                         self.add_user()
@@ -527,14 +533,14 @@ class Worker:
 
                     continue
 
-                Logging().info('Error')
+                Logging().info(f'[{self.profile_name}] Error')
 
                 self.error = True
 
                 return
             except:
                 if time.time() - now >= 5:
-                    Logging().info('No limit error')
+                    Logging().info(f'[{self.profile_name}] No limit error')
 
                     self.add_message()
                     self.add_user()
@@ -565,6 +571,8 @@ class DolphinAPI:
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/start?automation=1",
                             headers=headers)
 
+        Logging().info('Start - ' + str(resp.content))
+
         if b"initConnectionError" in resp.content:
             return 0
         elif b"automation" not in resp.content:
@@ -584,6 +592,8 @@ class DolphinAPI:
         }
 
         resp = requests.get(f"http://localhost:3001/v1.0/browser_profiles/{profile_id}/stop", headers=headers)
+
+        Logging().info('Stop - ' + str(resp.content))
 
         if b"error" in resp.content:
             time.sleep(5)
