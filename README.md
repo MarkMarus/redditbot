@@ -26,8 +26,10 @@ pip install -r requirements.txt
 # What is RedditBot?
 
 This bot uses reddit to parse posts and comments from those posts. The data is stored in file data.json.
-You can bulk messages to parsed users using MessageSender/main.py. WARNING: DO NOT USE THIS BOT TO PROMOTE Drugs or any other illegal substances. THE AUTHORS OF THE BOT ARE NOT RESPONSIBLE FOR THE ACTIVITIES PERFORMED BY THIS BOT.
+You can bulk messages to parsed users using MessageSender/main.py. 
+# WARNING: DO NOT USE THIS BOT TO PROMOTE Drugs or any other illegal substances. THE AUTHORS OF THE BOT ARE NOT RESPONSIBLE FOR THE ACTIVITIES PERFORMED BY THIS BOT.
 
 # Developers/Contributors:
-@lionex-ui
-@cvltyxd
+@https://github.com/lionex-ui
+
+@https://github.com/cvltyxd
