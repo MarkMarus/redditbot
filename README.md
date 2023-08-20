@@ -27,7 +27,7 @@ pip install -r requirements.txt
 
 This bot uses reddit to parse posts and comments from those posts. The data is stored in file data.json.
 You can bulk messages to parsed users using MessageSender/main.py. 
-# WARNING: DO NOT USE THIS BOT TO PROMOTE Drugs or any other illegal substances. THE AUTHORS OF THE BOT ARE NOT RESPONSIBLE FOR THE ACTIVITIES PERFORMED BY THIS BOT.
+WARNING: DO NOT USE THIS BOT TO PROMOTE Drugs or any other illegal substances. THE AUTHORS OF THE BOT ARE NOT RESPONSIBLE FOR THE ACTIVITIES PERFORMED BY THIS BOT.
 
 # Developers/Contributors:
 @https://github.com/lionex-ui
