@@ -30,6 +30,6 @@ You can bulk messages to parsed users using MessageSender/main.py.
 WARNING: DO NOT USE THIS BOT TO PROMOTE Drugs or any other illegal substances. THE AUTHORS OF THE BOT ARE NOT RESPONSIBLE FOR THE ACTIVITIES PERFORMED BY THIS BOT.
 
 # Developers/Contributors:
-([@lionex-ui])
+[@lionex-ui](https://github.com/lionex-ui)
 
-([@cvltyxd])
+[@cvlty](https://github.com/MarkMarus)
